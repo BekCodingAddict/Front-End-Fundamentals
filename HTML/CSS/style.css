@@ -73,6 +73,25 @@ section{
     ); */
 }
 
+.buttons{
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.buttons button{
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    color: white;
+    background-color: green;
+}
+
+
 @media (max-width:768px){
     .hamburger{
         display: block;
@@ -105,4 +124,21 @@ section{
     .nav-menu.active{
         left: 0;
     }
+}
+
+@media (max-width:768px){
+    .buttons{
+        flex-direction: column;
+    }
+
+    .buttons button{
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+    
+    section, .buttons{
+        display: inline-block;
+    }
+
 }
