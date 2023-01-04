@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@font-face {
-    font-family: 'Amazing-Slab-Regular-trial';
-    src: url("../Fonts/Amazing-Slab-Regular-trial.ttf");
-}
 *{
     padding: 0;
     margin: 0;
@@ -65,8 +61,8 @@ a{
     background-color: white;
 }
 section{
-    padding: 20 px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     height: 100vh;
     background-color: #fff;
     /* background: linear-gradient(
