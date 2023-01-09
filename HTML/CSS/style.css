@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+body{
+    display: inline-block;
+}
 header{
     background-color: #262626;
 }
@@ -90,6 +92,7 @@ section{
     color: white;
     background-color: green;
 }
+
 
 
 @media (max-width:768px){
