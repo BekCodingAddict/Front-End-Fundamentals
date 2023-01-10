@@ -5,9 +5,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body{
-    display: inline-block;
-}
+
 header{
     background-color: #262626;
 }
@@ -84,7 +82,8 @@ section{
 }
 
 .buttons button{
-    border-radius: 10px;
+    box-shadow: 0 0 2px 0 gray;
+    border-radius: 5px;
     border: none;
     text-align: center;
     padding: 5px;
@@ -93,6 +92,9 @@ section{
     background-color: green;
 }
 
+button:hover{
+    transform: scale(1.1);
+}
 
 
 @media (max-width:768px){
@@ -140,8 +142,5 @@ section{
         width: 90%;
     }
     
-    section, .buttons{
-        display: inline-block;
-    }
 
 }
