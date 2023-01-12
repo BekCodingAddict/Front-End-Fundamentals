@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon" href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>HTML Images</title>
+    <style>
+        h1{
+            background-color: aqua;
+            color: black;
+            padding: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Write Code Here... -->
+        <h1>HTML Images <hr></h1><br>
+        <div style="display: flex; justify-content: center; align-items: center; gap:10px; width: 100%;" >
+            <img style="width: 260px; height: 140px;" src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Italian Trulli">
+            <img style="width: 260px; height: 140px;" src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Italian Trulli">
+            <img style="width: 260px; height: 140px;" src="https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Italian Trulli">
+        </div><br>
+        <h2>HTML Images Syntax</h2><br>
+        <p>
+            The HTML img tag is used to embed an image in a web page.
+
+            Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+T           he img tag is empty, it contains attributes only, and does not have a closing tag.
+
+            The  img  tag has two required attributes: <br>
+
+            src - Specifies the path to the image
+            alt - Specifies an alternate text for the image
+        </p>
+        <h2>The src Attribute</h2><br>
+        <p>The required src attribute specifies the path (URL) to the image.
+
+           <br> Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.</p>
+        <div class="buttons">
+            <a href="../HTML/8.Links.html"><button type="button">< Pervious</button></a>
+            <a href="../HTML/2.Elements.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    
+    <script src="../JS/App.js"></script>
+</body>
+</html>
