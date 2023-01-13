@@ -16,14 +16,14 @@
         }
 
         p{
-            color: rgb(51, 51, 51);
-            padding: 20px;
+            height: 300px;
+            padding: 18px;
             border-radius: 10px;
-            backdrop-filter: blur(8px);
-            background-size: cover;
+            color: black;
+            background-image: url("https://images.pexels.com/photos/535095/pexels-photo-535095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-image: url("https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
         }
     </style>
 </head>
@@ -57,8 +57,29 @@
 
     <section>
         <!-- Write Code Here... -->
+        <h1>HTML Background Images <hr></h1><br>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, optio. Blanditiis iste quidem officiis eos eum minus placeat autem nesciunt, fugiat quam a. Quo reprehenderit temporibus, dolor doloremque eligendi quos.
+        </p>
+        <br>
+        Learn More CSS
+        From the examples above you have learned that background images can be styled by using the CSS background properties.
 
-        <br><hr><br>
+         To learn more about CSS background properties, study our CSS Background Tutorial <br>
+        <h2> HTML picture Element</h2><br>
+            The HTML picture element gives web developers more flexibility in specifying image resources.
+
+            The picture element contains one or more source elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+            
+            Each source element has a media attribute that defines when the image is the most suitable <hr><br><br><br>
+
+            <picture>
+                <source media="(min-width:768px)" srcset="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%; border-radius: 10px;">
+                <source media="(min-width:465px)" srcset="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%; border-radius: 10px;">
+                <img src="https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="PC_SetUp" style="width:100%; border-radius: 10px;">
+            </picture>
+
+        <br><br><hr>
         <div class="buttons">
             <a href="../HTML/1.Basics.html"><button type="button">< Pervious</button></a>
             <a href="../HTML/2.Elements.html"><button type="button">Next ></button></a>
