@@ -7,14 +7,6 @@
     <link rel="stylesheet" text="text/css" href="../CSS/style.css">
     <link rel="icon" text="x-icon" href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
     <title>HTML Images</title>
-    <style>
-        h1{
-            background-color: aqua;
-            color: black;
-            padding: 18px;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -47,7 +39,7 @@
     <section>
         <!-- Write Code Here... -->
         <h1>HTML Images <hr></h1><br>
-        <div style="display: flex; justify-content: center; align-items: center; gap:10px; width: 100%;" >
+        <div class="Img" style="display: flex; justify-content: center; align-items: center; gap:10px; width: 100%;" >
             <img style="width: 260px; height: 140px;" src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Italian Trulli">
             <img style="width: 260px; height: 140px;" src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Italian Trulli">
             <img style="width: 260px; height: 140px;" src="https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Italian Trulli">
@@ -76,5 +68,22 @@ T           he img tag is empty, it contains attributes only, and does not have 
     </section>
     
     <script src="../JS/App.js"></script>
+    <style>
+        h1{
+            background-color: aqua;
+            color: black;
+            padding: 18px;
+            text-align: center;
+        }
+        @media (max-width:768px){
+            section .Img{
+                flex-direction: column;
+                border-radius: 10px;
+                box-shadow: 0 0 3px 0 rgb(141, 141, 141);
+                padding: 20px;
+            }
+        }
+    
+    </style>
 </body>
 </html>
