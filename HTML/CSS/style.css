@@ -10,6 +10,19 @@ header{
     background-color: #262626;
 }
 
+.Title{
+    padding: 20px;
+    background: linear-gradient(
+        to right,
+        rgba(68, 246, 246, 0.904),
+        rgba(255, 0, 255, 0.955)
+    );
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 2px 0 rgba(128, 128, 128, 0.869);
+    width: 100%;
+}
 li{
     list-style: none;
 }
