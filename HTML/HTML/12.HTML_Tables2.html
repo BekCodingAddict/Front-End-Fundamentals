@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon" href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>HTML TABLES 2</title>
+    <style>
+        .border1 table, th, td {
+            border-collapse: collapse;
+            background-color: #96D4D4;
+          }
+          
+
+        .border2,th,td{
+            border-radius: 10px;
+            text-align: center;
+            border:1px solid black;
+        }
+
+        .border3, th, td{
+          border-style: dotted;
+        }
+        .border4, th,td{
+          border-color: aqua;
+          border-style: double;
+          padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Write Code Here... -->
+        <h1>HTML TABLES 2</h1><br>
+
+        <h3 class="Title_S">Style Table Borders</h3><br>
+        <div class="border1">
+          <table style="width:100%">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th> 
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>80</td>
+            </tr>
+          </table><br>
+        </div>
+          
+
+        <h3 class="Title_S">Round Table Borders</h3><br>
+        <p>With the border-radius property, the borders get rounded corners:</p><br>
+
+        <div class="border2">
+            <table style="width:100%">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th> 
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>80</td>
+                </tr>
+              </table>
+          </div><br>
+
+          <h3 class="Title_S">Dotted Table Borders</h3>
+          <br><p>With the border-style property, you can set the appearance of the border.</p><br>
+          <div class="border3">
+            <table style="width:100%">
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Age</th>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+              </tr>
+            </table>
+        </div><br>
+          </div>
+
+          <h3 class="Title_S">Border Color</h3><br>
+          <p>With the border-color property, you can set the color of the border.</p><br>
+          <div class="border4">
+            <table style="width:100%">
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Age</th>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+              </tr>
+            </table>
+          </div><br>
+
+        <br><hr><br>
+        <div class="buttons">
+            <a href="../HTML/11.HTML_Table.html"><button type="button">< Pervious</button></a>
+            <a href="../HTML/1.Basics.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    
+    <script src="../JS/App.js"></script>
+</body>
+</html>
