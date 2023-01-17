@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon" href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>HTML Table Sizes</title>
+    <style>
+      .table1,table, th, td {
+        border:1px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+      }
+      .table2,table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Write Code Here... -->
+        <h1 class="Title">HTML Table Sizes</h1><br>
+        <p>HTML tables can have different sizes for each column, row or the entire table. <br>
+            Use the style attribute with the width or height properties to specify the size of a table, row or column. <br></p><br>
+        <h3 class="Title_S">HTML Table Column Width</h3><br>
+        <p>To set the width of a table, add the style attribute to the <table> element:</p><br>
+        <p><mark>Note: Using a percentage as the size unit for a width means how wide will this element be compared to its parent element, which in this case is the body element.</mark></p><br>
+        <div class="table1">
+            <table style="width:100%">
+                <tr>
+                  <th style="width:70%">Firstname</th>
+                  <th>Lastname</th> 
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>80</td>
+                </tr>
+              </table>
+        </div><br>
+
+        <h3 class="Title_S">
+            HTML Table Row Height
+        </h3><br>
+        <p>To set the height of a specific row, add the style attribute on a table row element:</p><br>
+        <div class="table2">
+            <table style="width:100%">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th> 
+                  <th>Age</th>
+                </tr>
+                <tr style="height:50px">
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>80</td>
+                </tr>
+              </table>
+        </div>
+        <br><hr><br>
+        <div class="buttons">
+            <a href="../HTML/12.HTML_Tables2.html"><button type="button">< Pervious</button></a>
+            <a href="../HTML/1.Basics.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    
+    <script src="../JS/App.js"></script>
+</body>
+</html>

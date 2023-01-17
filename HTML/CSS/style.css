@@ -28,9 +28,9 @@ header{
     padding: 10px; 
     background:linear-gradient(
         to right,
-        gray,
-        lightgray,
-        White
+        yellow,
+        lime,
+        white
     );
     text-align: left;
     color: black;
