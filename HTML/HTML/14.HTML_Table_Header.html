@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon" href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>HTML Headers</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+       }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Write Code Here... -->
+        <h1 class="Title">HTML Headers</h1><br>
+
+        <table style="width:100%">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </table><br><br>
+          <h3 class="Title_S">Vertical Table Headers</h3><br>
+          <p>The first column becomes table headers if you set the first table cell in each table row to a TH element:</p><br>
+
+          <table style="width:100%">
+            <tr>
+              <th>Firstname</th>
+              <td>Jill</td>
+              <td>Eve</td>
+            </tr>
+            <tr>
+              <th>Lastname</th>
+              <td>Smith</td>
+              <td>Jackson</td>
+            </tr>
+            <tr>
+              <th>Age</th>  
+              <td>50</td>
+              <td>94</td>
+            </tr>
+          </table><br>
+
+          <h3 class="Title_S">Align Table Headers</h3><br>
+          <p>To left-align the table headers, use the CSS text-align property.</p>
+
+          <table style="width:100%">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </table><br>
+
+          <h3 class="Title_S">Header for Multiple Columns</h3><br>
+          
+          <p>Use the colspan attribute to have a header span over multiple columns.</p>
+
+          <table style="width:100%">
+            <tr>
+              <th colspan="2">Name</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </table><br>
+
+          <h3 class="Title_S">Table Caption</h3><br>
+          <p>To add a caption to a table, use the caption tag.</p>
+
+          <table style="width:100%">
+            <caption>Monthly savings</caption>
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>$50</td>
+            </tr>
+          </table><br>
+
+          <h3 class="Title_S">Note: The caption tag should be inserted immediately after the table tag.</h3>
+
+
+        <br><hr><br>
+        <div class="buttons">
+            <a href="../HTML/13.HTML_Tables_Sizes.html"><button type="button">< Pervious</button></a>
+            <a href="../HTML/2.Elements.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    
+    <script src="../JS/App.js"></script>
+</body>
+</html>
