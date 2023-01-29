@@ -8,7 +8,7 @@
     <link rel="stylesheet" text="text/css" href="../CSS/style.css">
     <link rel="icon" text="x-icon"
         href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
-    <title>HTML Iframes</title>
+    <title>HTML </title>
 
 </head>
 
@@ -45,49 +45,44 @@
 
     <section>
         <!-- ---------------------Write Code Here...----------------------------------->
-        <h1 class="Title">HTML Iframes
+        <h1 class="Title">HTML JavaScript
             <hr>
         </h1><br>
-        <p>An HTML iframe is used to display a web page within a web page.</p> <br>
-        <h3 class="Title_S">HTML Iframe Syntax</h3><br>
-        <p>The HTML iframe tag specifies an inline frame. <br>
-
-            An inline frame is used to embed another document within the current HTML document. <br>
-            <mark>
-                Tip: It is a good practice to always include a title attribute for the iframe. This is used by screen
-                readers to read out what the content of the iframe is.
-            </mark>
-        </p> <br>
-        <h3 class="Title_S">Iframe - Set Height and Width</h3> <br>
+        <h3 class="Title_S">The HTML script Tag</h3> <br>
         <p>
-            Use the height and width attributes to specify the size of the iframe. <br>
-            The height and width are specified in pixels by default: <br>
-        </p><br> <br>
-        <iframe src="../HTML/11.HTML_Table.html" width="95%" height="300px" frameborder="0"></iframe> <br>
-        <p><mark>Or you can add the style attribute and use the CSS height and width properties:</mark></p><br><br>
-        <iframe src="../HTML/12.HTML_Tables2.html" width="95%" height="350px" style="border: none;"
-            frameborder="0"></iframe> <br><br>
-        <h3 class="Title_S">Iframe - Target for a Link</h3> <br>
-        <p>An iframe can be used as the target frame for a link. <br>
+            The HTML script tag is used to define a client-side script (JavaScript). <br>
 
-            The target attribute of the link must refer to the name attribute of the iframe: <br>
-        </p><br>
-        <iframe src="../HTML/10.Background_images.html" name="iframe_a" width="95%" height="350px" title="Iframe Example"></iframe><br><br>
-        <p><a href="https://dic.daum.net/index.do?dic=eng&q=" target="iframe_a">Doun Dictionary</a> 
-            <br>
-            When the target attribute of a link matches the name of an iframe, the link will open in the iframe
+            The script element either contains script statements, or it points to an external script file through the
+            src attribute. <br>
+
+            Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content. <br>
+
+            To select an HTML element, JavaScript most often uses the document.getElementById() method. <br>
+
+            This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo": <br>
         </p> <br>
+        <h3 class="Title_S">A Taste of JavaScript</h3><br>
+        <p id="demo1"></p><br>
+        <h3 class="Title_S">The HTML noscript Tag</h3> <br>
+        <p>The HTML noscript tag defines an alternate content to be displayed to users that have disabled scripts in
+            their browser or have a browser that doesn't support scripts:</p><br>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript> <br>
+
+        <p>A browser without support for JavaScript will show the text written inside the noscript element.</p><br>
+
+
         <!----------------------------------------------------------------------------->
         <br>
         <hr><br>
         <div class="buttons">
-            <a href="../HTML/21.HTML_ID.html"><button type="button">
+            <a href="../HTML/22.HTML_Iframes.html"><button type="button">
                     < Pervious</button></a>
-            <a href="../HTML/23.HTML_JavaScript.html"><button type="button">Next ></button></a>
+            <a href="../HTML/1.Basics.html"><button type="button">Next ></button></a>
         </div>
     </section>
 
     <script src="../JS/App.js"></script>
+    <script src="../JS/HTML_with_JavaScript.js"></script>
 </body>
 
 </html>
