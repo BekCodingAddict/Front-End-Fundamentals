@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>HTML </title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- ---------------------Write Code Here...----------------------------------->
+        <h1 class="Title">HTML Responsive Web Design</h1> <br>
+        <p>Responsive web design is about creating web pages that look good on all devices. <br>
+            A responsive web design will automatically adjust for different screen sizes and viewports.
+        </p> <br>
+        <h3 class="Title_S">What is Responsive Web Design?</h3><br>
+        <p>
+            Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a
+            website, to make it look good on all devices (desktops, tablets, and phones):
+        </p> <br>
+        <h3 class="Title_S">Setting The Viewport</h3><br>
+        To create a responsive website, add the following meta tag to all your web pages: <br>
+        <h3 class="Title_S">Responsive Images</h3><br>
+        <p>
+            Responsive images are images that scale nicely to fit any browser size. <br>
+            If the CSS width property is set to 100%, the image will be responsive and scale up and down: <br>
+        </p> <br>
+        <img src="	https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE510hG?ver=2e63
+        " style="width:100%;"> <br>
+        <p><mark>Notice that in the example above, the image can be scaled up to be larger than its original size. A
+                better solution, in many cases, will be to use the max-width property instead.</mark></p><br>
+        <h3 class="Title_S">Show Different Images Depending on Browser Width</h3><br>
+        <p>
+            The HTML picture element allows you to define different images for different browser window sizes.
+            Resize the browser window to see how the image below changes depending on the width: <br>
+        </p><br>
+        <h3 class="Title_S">Responsive Text Size</h3><br>
+        <p>The text size can be set with a "vw" unit, which means the "viewport width".
+
+            That way the text size will follow the size of the browser window: <br>
+            <mark>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is
+                0.5cm.</mark><br>
+        </p><br>
+        <h3 class="Title_S">Media Queries</h3><br>
+        <p>
+            In addition to resize text and images, it is also common to use media queries in responsive web pages.
+
+            With media queries you can define completely different styles for different browser sizes.
+
+            Example: resize the browser window to see that the three div elements below will display horizontally on
+            large screens and stack vertically on small screens:
+        </p><br>
+        <iframe src="../HTML/26.HTML-Responsive-Example.html" width="100%" height="350px" frameborder="0"></iframe><br><br>
+        <h3 class="Title_S">Responsive Web Page Full Example:</h3> <br>
+        <iframe src="../HTML/26.HTML-ResponsiveDesign.html" width="100%" height="350px" frameborder="0"></iframe>
+        <!----------------------------------------------------------------------------->
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/1.Basics.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/2.Elements.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+
+    <script src="../JS/App.js"></script>
+</body>
+
+</html>
