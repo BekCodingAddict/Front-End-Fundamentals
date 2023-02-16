@@ -1,0 +1,5 @@
+---------------------------CSS------------------------------
+Backgrounds Repeat:
+  - If the image above is repeated only horizontally (background-repeat: repeat-x;), 
+  the background will look better.
+  Tip: To repeat an image vertically, set background-repeat: repeat-y;

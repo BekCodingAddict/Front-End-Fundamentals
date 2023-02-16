@@ -98,6 +98,52 @@
         <div style="background: rgb(0,128,0);">
             <h1>Opacity 1 (Default)</h1>
         </div><br>
+        <h3 class="title-s">CSS Background Image</h3><br>
+        <p>The background-image property specifies an image to use as the background of an element.
+
+            By default, the image is repeated so it covers the entire element.
+        </p><br>
+        <mark>Note: When using a background image, use an image that does not disturb the text.</mark><br>
+        The background image can also be set for specific elements, like the p element:
+
+        <h3 class="title-s">CSS Background Image Repeat</h3><br>
+        <p>
+            By default, the background-image property repeats an image both horizontally and vertically.
+            Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+        </p><br>
+        <h3 class="title-s">CSS background-repeat: no-repeat</h3><br>
+        <p>Showing the background image only once is also specified by the background-repeat property:</p><br>
+
+        <h3 class="title-s">CSS background-position</h3><br>
+        <p>
+            The background-position property is used to specify the position of the background image.
+        </p><br>
+        <div style="background-position: right top; background-image: url('https://i.stack.imgur.com/joGPS.jpg');">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium omnis maiores totam, aperiam
+            ut error labore optio expedita, minima qui asperiores provident nostrum officia laudantium laborum ipsa et
+            deserunt.
+        </div><br>
+        <h3 class="title-s">CSS background-attachment</h3><br>
+        <p>
+            The background-attachment property specifies whether the background image should scroll or be fixed (will
+            not scroll with the rest of the page): <br>
+            body { <br>
+            background-image: url("img_tree.png");<br>
+            background-repeat: no-repeat; <br>
+            background-position: right top; <br>
+            background-attachment: fixed; <br>
+            } <br>
+        </p><br>
+        <h3 class="title-s">CSS Background Shorthand</h3><br>
+        <p>
+            To shorten the code, it is also possible to specify all the background properties in one single property.
+            This is called a shorthand property.
+        </p> <br>
+        <p>
+            body { <br>
+                background: #ffffff url("img_tree.png") no-repeat right top; <br>
+              } <br>
+        </p>
 
 
         <!-------------------------------------------------------------------->
