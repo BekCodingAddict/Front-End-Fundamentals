@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>CSS Backgrounds</title>
+    <link rel="stylesheet" text="text/css" href="../CSS/1.css-backgounds.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-------------------------- Write Code Here... ---------------------->
+        <h1 class="title">CSS Backgrounds
+            <hr>
+        </h1><br>
+        <p>The CSS background properties are used to add background effects for elements.</p><br>
+
+        <h3 class="title-s">CSS background-color</h3><br>
+        <div class="demo1">
+            <h2>Hello World</h2><br>
+            <p>This page has a light blue background color!</p>
+        </div> <br>
+        <h3 class="title-s">Opacity / Transparency</h3> <br>
+        The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The
+        lower value, the more transparent: <br><br>
+
+        <div class="frist">
+            <h1>Opacity 0.1</h1>
+        </div><br>
+        <div class="second">
+            <h1>Opacity 0.3</h1>
+        </div><br>
+        <div class="thrid">
+            <h1>Opacity 0.6</h1>
+        </div><br>
+        <div class="four">
+            <h1>Opacity 1 (Default)</h1>
+        </div><br>
+        <div class="gray-box">
+            <mark>Note: When using the opacity property to add transparency to the background of an element, all of its
+                child elements inherit the same transparency. This can make the text inside a fully transparent element
+                hard to read.</mark><br>
+        </div> <br>
+        <h3 class="title-s">Transparency using RGBA</h3> <br>
+        <p>
+            If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The
+            following example sets the opacity for the background color and not the text:
+            In addition to RGB, you can use an RGB color value with an alpha channel (RGBA) - which specifies the
+            opacity for a color.
+            An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number
+            between 0.0 (fully transparent) and 1.0 (fully opaque).
+        </p><br>
+        <div style="background: rgba(0,128,0,0.1);">
+            <h1>Opacity 0.1</h1>
+        </div><br>
+        <div style="background: rgba(0,128,0,0.3);">
+            <h1>Opacity 0.3</h1>
+        </div><br>
+        <div style="background: rgba(0,128,0,0.6);">
+            <h1>Opacity 0.6</h1>
+        </div><br>
+        <div style="background: rgb(0,128,0);">
+            <h1>Opacity 1 (Default)</h1>
+        </div><br>
+
+
+        <!-------------------------------------------------------------------->
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/7.CSS-HSL-Color.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    <!----------------------JavaScript---------------------------------------->
+
+    <script src="../JS/App.js"></script>
+</body>
+
+</html>

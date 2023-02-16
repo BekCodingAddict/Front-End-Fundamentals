@@ -1,0 +1,21 @@
+.demo1{
+    background-color: aqua;
+    color: black;
+    padding: 20px;
+}
+
+.frist{
+  opacity: 0.1;
+}
+
+.second{
+  opacity: 0.3;
+}
+
+.thrid{
+  opacity: 0.6;
+}
+
+.four{
+  background-color: green;
+}

@@ -125,6 +125,20 @@ section{
 button:hover{
     transform: scale(1.1);
 }
+.gray-box{
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(
+        to top,
+        gray,
+        lightgray,
+        white
+    );
+    text-align: left;
+    border:1px dotted lightgray;
+    border-radius: 5px;
+}
+
 
 
 @media (max-width:768px){
