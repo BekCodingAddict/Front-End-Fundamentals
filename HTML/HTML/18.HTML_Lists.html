@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>HTML Lists</title>
+    <style>
+        .list1 {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Write Code Here... -->
+        <h1 class="Title">HTML Lists
+            <hr>
+        </h1><br>
+        <div class="list1">
+
+            <h2 class="Title_S">An Unordered HTML List</h2><br>
+
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul> <br>
+
+            <h2>Unordered HTML List - Choose List Item Marker</h2><br>
+            <ul style="list-style-type:disc;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul><br>
+
+            <h3>Unordered List with Circle Bullets</h3><br>
+
+            <ul style="list-style-type:circle;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul><br>
+
+            <h3>Unordered List with Square Bullets</h3><br>
+
+            <ul style="list-style-type:square;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul><br>
+
+
+            <h2 class="Title_S">An Ordered HTML List</h2><br>
+
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol><br>
+            <h2>Ordered List with Numbers</h2><br>
+
+            <ol type="1">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol><br><br>
+            <h2>Ordered List with Letters</h2><br>
+
+            <ol type="A">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol><br>
+
+            <h2>Ordered List with Lowercase Letters</h2><br>
+
+            <ol type="a">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol><br>
+            <h2>Ordered List with Roman Numbers</h2><br>
+            <ol type="I">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol> <br>
+
+            <h2>Ordered List with Lowercase Roman Numbers</h2><br>
+
+            <ol type="i">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol> <br>
+            <h2>The start attribute</h2><br>
+            <p>By default, an ordered list will start counting from 1. Use the start attribute to start counting from a
+                specified number:</p><br>
+
+            <ol start="50">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol><br>
+
+            <ol type="I" start="50">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol><br>
+
+            <h2>A Nested List</h2><br>
+            <p>Lists can be nested (list inside list):</p><br>
+
+            <ol>
+                <li>Coffee</li>
+                <li>Tea
+                    <ol>
+                        <li>Black tea</li>
+                        <li>Green tea</li>
+                    </ol>
+                </li>
+                <li>Milk</li>
+            </ol><br>
+
+
+
+            <h3 class="Title_S">HTML Discription List</h3><br>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+            </dl><br>
+        </div>
+
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/17.Table_Colgroup.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/1.Basics.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+
+    <script src="../JS/App.js"></script>
+</body>
+
+</html>
