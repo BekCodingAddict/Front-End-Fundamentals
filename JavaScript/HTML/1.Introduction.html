@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title> jS Intoduction </title>
+    <style>
+        .demo {
+            background: linear-gradient(to top,
+                    lightgray,
+                    white);
+            padding: 10px;
+        }
+        .light{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap:10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!--------------------- Write Code Here... ----------------------------------->
+        <h1 class="title">Intoduction</h1><br>
+        <h3 class="title-s">My First JavaScript</h3><br>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.</button><br><br>
+        <div style="padding:8px; background: linear-gradient(to right,lightgray,white);border-radius:5px;" id="demo">
+        </div><br>
+        <h3 class="title-3">Why Study JavaScript?</h3><br>
+        <p>JavaScript is one of the 3 languages all web developers must learn: <br>
+
+            1. HTML to define the content of web pages <br>
+
+            2. CSS to specify the layout of web pages <br>
+
+            3. JavaScript to program the behavior of web pages <br>
+
+            This tutorial covers every version of JavaScript:</p><br>
+        <h3 class="title-s">JavaScript Can Change HTML Content</h3><br>
+        <p>One of many JavaScript HTML methods is getElementById().
+
+            The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to
+            "Hello JavaScript":</p><br>
+        <div class="demo">
+            <p id="demo2">JavaScript can change HTML content.</p>
+        </div><br>
+        <button type="button" onclick="document.getElementById('demo2').innerHTML='Hello JavaScript!'">Click
+            Me!</button><br><br>
+        <p><mark>JavaScript accepts both double and single quotes:</mark></p><br>
+        <h3 class="title-s">JavaScript Can Change HTML Attribute Values</h3><br>
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p><br>
+        <div class="light">
+            <button onclick="document.getElementById('myImage').src='../Sources/pic_bulbon.gif'">Turn on the
+                Light</button><br>
+            <img src="../Sources/pic_bulboff.gif" alt="" id="myImage" style="width:100px;"><br>
+            <button onclick="document.getElementById('myImage').src='../Sources/pic_bulboff.gif'">Turn off the
+                Light</button>
+
+        </div>
+
+        <!---------------------------------------------------------------------------->
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/1.Basics.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/2.Elements.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+
+    <script src="../JS/App.js"></script>
+</body>
+
+</html>
