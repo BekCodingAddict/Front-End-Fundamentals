@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -39,7 +40,7 @@ header{
     width: inherit;
     border-radius: 5px;
 }
-.navbar .nav-banding li{
+.navbar li{
     list-style: none;
 }
 
@@ -89,6 +90,7 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+
 section{
     padding: 10px;
     margin: 10px;

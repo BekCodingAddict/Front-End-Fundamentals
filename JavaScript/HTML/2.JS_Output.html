@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>JavaScript</title>
+    <script>
+        function myFunction() {
+            document.getElementById("Demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!---------------------------------Write Code Here... -------------------->
+        <h1 class="title">JavaScript Where To
+            <hr>
+        </h1><br>
+        <h3 class="title-s">The script Tag</h3><br>
+        <p>In HTML, JavaScript code is inserted between script and script tags.</p><br>
+        <h2>JavaScript in Body</h2>
+        <p id="demo"></p><br><br>
+        <script>
+            document.getElementById("demo").innerHTML = "My First JavaScript";
+        </script>
+
+        <h3 class="title-s">JavaScript Functions and Events</h3><br>
+        <p>A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+
+            For example, a function can be called when an event occurs, like when the user clicks a button.</p><br>
+        <mark>You will learn much more about functions and events in later chapters.</mark><br><br>
+
+        <h3 class="title-s">JavaScript in head or body</h3><br>
+        <p>You can place any number of scripts in an HTML document.
+
+            Scripts can be placed in the body, or in the head section of an HTML page, or in both.</p><br>
+        <h3 class="title-s">JavaScript in head</h3><br>
+        <p>In this example, a JavaScript function is placed in the head section of an HTML page.
+
+            The function is invoked (called) when a button is clicked:</p><br>
+        <h2>Demo JavaScript in Head</h2>
+
+        <p id="Demo">A Paragraph.</p>
+
+        <button type="button" onclick="myFunction()">Try it</button><br><br>
+        <h3 class="title-s">JavaScript in body</h3><br>
+        <p>In this example, a JavaScript function is placed in the body section of an HTML page.
+
+            The function is invoked (called) when a button is clicked:</p><br>
+
+        <h2>Demo JavaScript in Body</h2><br>
+
+        <p id="demo2">A Paragraph.</p>
+
+        <button type="button" onclick="myFunction()">Try it</button><br>
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo2").innerHTML = "Paragraph changed.";
+            }
+        </script><br>
+        <h4 class="title-s">Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.</h4>
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/1.Basics.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/2.Elements.html"><button type="button">Next ></button></a>
+        </div><br>
+    </section>
+
+    <script src="../JS/App.js"></script>
+</body>
+
+</html>
