@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>JavaScript Statements</title>
+    <style>
+        .box {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top,
+                    gray,
+                    lightgray,
+                    white);
+            border: 1px dotted lightgray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-------------------------- Write Code Here... ---------------------->
+        <h1 class="title">JavaScript Statements</h1><br>
+        <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p><br>
+        <p id="Demo"></p><br>
+        <div class="box">
+            <p>A computer program is a list of "instructions" to be "executed" by a computer. <br>
+
+                In a programming language, these programming instructions are called statements. <br>
+
+                A JavaScript program is a list of programming statements. <br>
+
+                In HTML, JavaScript programs are executed by the web browser. <br>
+                Most JavaScript programs contain many JavaScript statements. <br>
+
+                The statements are executed, one by one, in the same order as they are written. <br>
+            </p>
+        </div><br>
+        <h3 class="title-s">Semicolons ;</h3><br>
+        <p>
+            Semicolons separate JavaScript statements.
+            Add a semicolon at the end of each executable statement:
+        </p><br>
+        <p id="Demo2"></p><br>
+        <p>When separated by semicolons, multiple statements on one line are allowed:</p><br>
+        <p class="box">a = 5; b = 6; c = a + b;</p><br>
+        <p><mark>On the web, you might see examples without semicolons.
+            Ending statements with semicolon is not required, but highly recommended.</mark></p><br>
+
+
+
+
+        <!-------------------------------------------------------------------->
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/1.Introduction.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/2.JS_Output.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    <!----------------------JavaScript---------------------------------------->
+    <script>
+        let x, y, z; //Declar 3 variables
+        x = 10; // assign the value to x
+        y = 20; // assign the value to y
+        z = x + y; // assign the sun of x and y to z.
+
+        document.getElementById("Demo").innerHTML = "The value of z is " + z + ".";
+        document.getElementById("Demo2").innerHTML="x*y="+z+".";
+
+    </script>
+    <script src="../JS/App.js"></script>
+</body>
+
+</html>
