@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>JavaScript let</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-------------------------- Write Code Here... ---------------------->
+        <h1 class="title">JavaScript let
+            <hr>
+        </h1><br>
+        <div class="gary-box">
+            <p>
+                The let keyword was introduced in ES6 (2015). <br>
+
+                Variables defined with let can not be redeclared. <br>
+
+                Variables defined with let must be declared before use. <br>
+
+                Variables defined with let have block scope. <br>
+            </p>
+        </div><br>
+        <h3 class="title-s">Cannot be Redeclared</h3><br>
+        <p>
+            With let you can not do this: <br>
+
+            let x = "John Doe"; <br>
+
+            let x = 0; <br>
+            With var you can: <br>
+
+            var x = "John Doe"; <br>
+
+            var x = 0; <br>
+        </p><br>
+        <h3 class="title-s">Block Scope</h3> <br>
+        <p>
+            Before ES6 (2015), JavaScript had Global Scope and Function Scope. <br>
+
+            ES6 introduced two important new JavaScript keywords: let and const. <br>
+
+            These two keywords provide Block Scope in JavaScript. <br>
+
+            Variables declared inside a { } block cannot be accessed from outside the block: <br>
+            <mark>
+                Example <br>
+                { <br>
+                let x = 2; <br>
+                } <br>
+                // x can NOT be used here <br>
+            </mark> <br>
+        <h4>Variables declared with the var keyword can NOT have block scope <br>
+
+            Variables declared inside a { } block can be accessed from outside the block.</h4> <br>
+        <p>
+            Example <br>
+            { <br>
+            var x = 2; <br>
+            } <br>
+            // x CAN be used here <br>
+        </p>
+
+        </p><br>
+        <h3 class="title-s">Redeclaring</h3> <br>
+        <p>
+            Redeclaring a JavaScript variable with var is allowed anywhere in a program: <br>
+        <p id="demo"></p>
+        </p>
+        <script>
+            var a = 2;
+            // now var a =2;
+            var a = 4;
+            //now var a=4;
+
+            document.getElementById('demo').innerHTML = "a=" + a + "."
+        </script><br>
+        <h4><mark>With let, redeclaring a variable in the same block is NOT allowed:</mark></h4><br>
+        <p>var x = 2; // Allowed <br>
+            let x = 3; // Not allowed <br>
+
+            { <br>
+            let x = 2; // Allowed <br>
+            let x = 3; // Not allowed <br>
+            }
+
+            { <br>
+            let x = 2; // Allowed <br>
+            var x = 3; // Not allowed <br>
+            }
+        </p><br>
+        <h4><mark>Redeclaring a variable with let, in another block, IS allowed:</mark></h4><br>
+        <p>
+            let x = 2; // Allowed <br>
+
+            { <br>
+            let x = 3; // Allowed <br>
+            } <br>
+
+            { <br>
+            let x = 4; // Allowed <br>
+            } <br>
+        </p><br>
+
+        <h3 class="title-s">Let Hoisting</h3><br>
+        <p>
+            Variables defined with var are hoisted to the top and can be initialized at any time. <br>
+
+            Meaning: You can use the variable before it is declared: <br>
+        </p> <br>
+        <code>
+            This is OK: <br>
+
+            carName = "Volvo"; <br>
+            var carName; <br>
+        </code>
+        <p id="demo2"></p> <br>
+        <div class="gray-box">
+            <p>
+                If you want to learn more about hoisting, study the chapter JavaScript Hoisting. <br>
+
+                Variables defined with let are also hoisted to the top of the block, but not initialized. <br>
+
+                Meaning: Using a let variable before it is declared will result in a ReferenceError: <br>
+            </p>
+        </div>
+    <!------------------------------------------------------------------------>
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/7.JS-Variables.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    <!----------------------JavaScript---------------------------------------->
+
+    <script src="../JS/App.js"></script>
+    <script src="../JS/1.JS-let.js"></script>
+</body>
+
+</html>
