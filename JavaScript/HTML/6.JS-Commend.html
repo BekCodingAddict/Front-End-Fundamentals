@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>JavaScript Comments</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-------------------------- Write Code Here... ---------------------->
+        <h1 class="title">JavaScript Comments
+            <hr>
+        </h1> <br>
+        <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+
+            JavaScript comments can also be used to prevent execution, when testing alternative code.
+        </p><br>
+        <h3 class="title-s">Single Line Comments</h3><br>
+        <p>
+            Single line comments start with //.
+
+            Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+
+            This example uses a single-line comment before each code line
+        </p><br>
+        <code>
+            // Change heading: <br>
+            document.getElementById("myH").innerHTML = "JavaScript Comments"; <br>
+            // Change paragraph: <br>
+            document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+            for Example: <br>
+            let x = 5;      // Declare x, give it the value of 5 <br>
+            let y = x + 2;  // Declare y, give it the value of x + 2 <br>
+        </code> <br>
+        <h3 class="title-s">Multi-line Comments</h3><br>
+        <p>
+            Multi-line comments start with /* and end with */. <br>
+
+            Any text between /* and */ will be ignored by JavaScript. <br>
+
+            This example uses a multi-line comment (a comment block) to explain the code: <br>
+            <code>
+                /*
+                  The code below will change <br>
+                  the heading with id = "myH" <br>
+                  and the paragraph with id = "myP" <br>
+                  in my web page: <br>
+                */ <br>
+                document.getElementById("myH").innerHTML = "My First Page"; <br>
+                document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+            </code> <br>
+            <mark>
+                It is most common to use single line comments.
+                Block comments are often used for formal documentation.
+            </mark> <br>
+
+        </p><br>
+        <h3 class="title-s">Using Comments to Prevent Execution</h3><br>
+        <p>
+            Using comments to prevent execution of code is suitable for code testing.
+
+            Adding // in front of a code line changes the code lines from an executable line to a comment.
+
+            This example uses // to prevent execution of one of the code lines: <br>
+            <code>
+                //document.getElementById("myH").innerHTML = "My First Page"; <br>
+                document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+            </code> <br>
+            <p>This example uses a comment block to prevent execution of multiple lines:</p><br>
+            <code>
+                /*
+                  document.getElementById("myH").innerHTML = "My First Page"; <br>
+                  document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+                */
+            </code>
+        </p>
+
+
+
+
+        <!-------------------------------------------------------------------->
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/5.JS_Syntax.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    <!----------------------JavaScript---------------------------------------->
+
+    <script src="../JS/App.js"></script>
+</body>
+
+</html>
