@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>JavaScript const</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-------------------------- Write Code Here... ---------------------->
+        <h1 class="title">JavaScript const
+            <hr>
+        </h1><br>
+        <div class="gray-box">
+            <p>
+                The const keyword was introduced in ES6 (2015). <br>
+
+                Variables defined with const cannot be Redeclared. <br>
+
+                Variables defined with const cannot be Reassigned. <br>
+
+                Variables defined with const have Block Scope. <br>
+            </p>
+        </div> <br>
+
+        <h3 class="title-s">Cannot be Reassigned</h3><br>
+        <p>
+            const PI = 3.141592653589793; <br>
+            PI = 3.14; // This will give an error <br>
+            PI = PI + 10; // This will also give an error <br>
+        </p><br>
+        <p id="demo"></p> <br>
+        <h3 class="title-s">Must be Assigned </h3>
+        <hr>
+        <p>
+            JavaScript const variables must be assigned a value when they are declared: <br>
+
+            Correct <br>
+            const PI = 3.14159265359; <br>
+            Incorrect <br>
+            const PI; <br>
+            PI = 3.14159265359; <br>
+
+        </p><br>
+        <div class="gray-box">
+            <h4>When to use JavaScript const?</h4><br>
+            <p>
+                Always declare a variable with const when you know that the value should not be changed. <br>
+
+                Use const when you declare: <br>
+
+                A new Array <br>
+                A new Object <br>
+                A new Function <br>
+                A new RegExp <br>
+            </p>
+        </div> <br>
+        <h3 class="title-s">Constant Objects and Arrays</h3><br>
+        <p>
+            The keyword const is a little misleading. <br>
+
+            It does not define a constant value. It defines a constant reference to a value. <br>
+
+            Because of this you can NOT: <br>
+
+            Reassign a constant value <br>
+            Reassign a constant array <br>
+            Reassign a constant object <br>
+            But you CAN: <br>
+
+            Change the elements of constant array <br>
+            Change the properties of constant object <br>
+        </p> <br>
+        <h3 class="title-s">Constamt Array</h3><br>
+        <p>You can change the elements of a constant array:</p><br>
+        <p>// You can create a constant array: <br>
+            const cars = ["Saab", "Volvo", "BMW"]; <br>
+
+            // You can change an element: <br>
+            cars[0] = "Toyota"; <br>
+
+            // You can add an element: <br>
+
+            cars.push("Audi"); <br>
+        </p><br>
+        <p id="demo1"></p><br>
+        <p id="demo2"></p><br>
+        <p id="demo3"></p> <br>
+        <p><mark>But you can NOT reassign the array:</mark></p><br>
+        <p>const cars = ["Saab", "Volvo", "BMW"]; <br>
+
+            cars = ["Toyota", "Volvo", "Audi"]; // ERROR
+        </p>
+        <p id="demo4"></p> <br>
+        <h3 class="title-s">Constant Objects</h3><br>
+        <p>You can change the properties of a constant object:</p><br>
+        <p>
+            // You can create a const object: <br>
+            const car = {type:"Fiat", model:"500", color:"white"}; <br>
+            // You can change a property: <br>
+            car.color = "red";<br>
+            // You can add a property: <br>
+            car.owner = "Johnson"; <br>
+
+        </p><br>
+        <p id="demo5"></p><br>
+        <p id="demo6"></p> <br>
+        <p><mark>But you can NOT reassign the object:</mark></p><br>
+        <p>const car = {type:"Fiat", model:"500", color:"white"}; <br>
+
+            car = {type:"Volvo", model:"EX60", color:"red"}; // ERROR</p><br>
+        <p id="demo7"></p> <br>
+        <h3 class="title-s">Block Scope</h3><br>
+        <p>
+            Declaring a variable with const is similar to let when it comes to Block Scope. <br>
+
+            The x declared in the block, in this example, is not the same as the x declared outside the block: <br>
+        </p> <br>
+        <h3 class="title-s">Redeclaring</h3><br>
+        <p>Redeclaring a JavaScript var variable is allowed anywhere in a program:</p> <br>
+        <p>
+            Example <br>
+            var x = 2; // Allowed <br>
+            var x = 3; // Allowed <br>
+            x = 4; // Allowed <br>
+        </p> <br>
+        <p><mark>Redeclaring an existing var or let variable to const, in the same scope, is not allowed:</mark></p><br>
+        <p>
+            var x = 2; // Allowed <br>
+            const x = 2; // Not allowed <br>
+
+            { <br>
+            let x = 2; // Allowed <br>
+            const x = 2; // Not allowed <br>
+            } <br>
+
+            { <br>
+            const x = 2; // Allowed <br>
+            const x = 2; // Not allowed <br>
+            } <br>
+        </p><br>
+        <p><mark>Reassigning an existing const variable, in the same scope, is not allowed:</mark></p><br>
+        <p>
+            const x = 2; // Allowed <br>
+            x = 2; // Not allowed <br>
+            var x = 2; // Not allowed <br>
+            let x = 2; // Not allowed <br>
+            const x = 2; // Not allowed <br>
+
+            { <br>
+            const x = 2; // Allowed <br>
+            x = 2; // Not allowed <br>
+            var x = 2; // Not allowed <br>
+            let x = 2; // Not allowed <br>
+            const x = 2; // Not allowed <br>
+            } <br>
+        </p><br>
+        <p><mark>Redeclaring a variable with const, in another scope, or in another block, is allowed:</mark></p><br>
+        <p>
+            const x = 2; // Allowed <br>
+
+            { <br>
+            const x = 3; // Allowed <br>
+            } <br>
+
+            { <br>
+            const x = 4; // Allowed <br>
+            } <br>
+        </p>
+        <!-------------------------------------------------------------------->
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/8.JS_let.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
+        </div>
+    </section>
+    <!----------------------JavaScript---------------------------------------->
+    <script src="../JS/App.js"></script>
+    <script src="../JS/2.JS-const.js"></script>
+</body>
+
+</html>
