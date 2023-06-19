@@ -417,6 +417,33 @@ Arrays are Not Constants:
 An array declared with var does not have block scope.
 Redeclaring Arrays:
   - Redeclaring an array declared with var is allowed anywhere in a program.
-    var cars = ["Volvo", "BMW"];   // Allowed
-    var cars = ["Toyota", "BMW"];  // Allowed
-    cars = ["Volvo", "Saab"];      // Allowed
+  - Redeclaring or reassigning an array to const, in the same scope, or in the same block, is not allowed:
+  - Redeclaring an array with const, in another scope, or in another block, is allowed:
+
+----------------------JavaScript Date Objects----------------------------------
+NOTE:
+  - Date objects are static. The "clock" is not "running".
+    The computer clock is ticking, date objects are not.
+  - JavaScript counts months from 0 to 11:
+      January = 0.
+      December = 11.
+    
+JavaScript Date Output:
+  - By default, JavaScript will use the browser's time zone and display a date as a full text string.
+Creating Date Objects:
+  - Date objects are created with the new Date() constructor.
+    There are 9 ways to create a new date object:
+    new Date()
+    new Date(date string)
+    new Date(year,month)
+    new Date(year,month,day)
+    new Date(year,month,day,hours)
+    new Date(year,month,day,hours,minutes)
+    new Date(year,month,day,hours,minutes,seconds) 
+    new Date(year,month,day,hours,minutes,seconds,ms)
+    new Date(milliseconds)
+
+  - new Date() creates a date object with the current date and time:
+  - new Date(date string) creates a date object from a date string:
+  - new Date(year, month, ...) creates a date object with a specified date and time.
+
