@@ -1,0 +1,5 @@
+JavaScript Types are Dynamic. This means the same variable can used to hold diffrent data types:
+   let x; //Undefined
+   x=5; // Number 
+   x="John"; // String
+
