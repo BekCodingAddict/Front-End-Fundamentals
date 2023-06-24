@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="icon" text="x-icon"
+        href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
+    <title>JavaScript Events</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-banding">Bek Coding Addict</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/JavaScript/HTML/1.Introduction.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/HTML/HTML/1.Basics.html" class="nav-link">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CSS/HTML/1.Introduction.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-------------------------- Write Code Here... ---------------------->
+        <h1 class="title">JavaScript Events</h1><br>
+        <p>
+            HTML events are "things" that happen to HTML elements.
+            When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+        </p><br>
+        <h3 class="title-s">HTML Events</h3><br>
+        <p>
+            An HTML event can be something the browser does, or something a user does. <br>
+            Here are some examples of HTML events: <br>
+            An HTML web page has finished loading <br>
+            An HTML input field was changed <br>
+            An HTML button was clicked <br>
+            Often, when events happen, you may want to do something. <br>
+            JavaScript lets you execute code when events are detected. <br>
+            HTML allows event handler attributes, with JavaScript code, to be added to HTML elements. <br>
+        </p><br>
+        <h4>Example </h4><br>
+        <button style="padding: 5px; width: 200px; background-color: green; color: white;"
+            onclick="this.innerHTML=Date()">Show the Time ?</button> <br> <br>
+        <mark>JavaScript code is often several lines long. It is more common to see event attributes calling
+            functions:</mark><br>
+
+        <h2>JavaScript HTML Events</h2>
+        <p>Click the button to display the date.</p><br>
+
+        <button style="padding: 5px; width: 200px; background-color: green; color: white;" onclick="displayDate()">The
+            time is?</button> <br>
+        <p id="demo1"></p><br>
+        <h3 class="title-s">Common HTML Events</h3> <br>
+        <img src="../Sources/JS-HTML EVENTS.png" width="100%" height="300px" alt="HTML Events"> <br>
+        <h3 class="title-s">JavaScript Event Handlers</h3><br>
+        <p>
+            Event handlers can be used to handle and verify user input, user actions, and browser actions: <br>
+            Things that should be done every time a page loads <br>
+            Things that should be done when the page is closed <br>
+            Action that should be performed when a user clicks a button <br>
+            Content that should be verified when a user inputs data <br>
+            And more ... <br>
+            Many different methods can be used to let JavaScript work with events: <br>
+
+            HTML event attributes can execute JavaScript code directly <br>
+            HTML event attributes can call JavaScript functions <br>
+            You can assign your own event handler functions to HTML elements <br>
+            You can prevent events from being sent or being handled <br>
+            And more ... <br>
+        </p> <br>
+        <!-------------------------------------------------------------------->
+        <br>
+        <hr><br>
+        <div class="buttons">
+            <a href="../HTML/6.JS-Commend.html"><button type="button">
+                    < Pervious</button></a>
+            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
+        </div> <br>
+    </section>
+    <!----------------------JavaScript---------------------------------------->
+
+    <script src="../JS/App.js"></script>
+    <script src="../JS/9.JS-Event.js"></script>
+</body>
+
+</html>

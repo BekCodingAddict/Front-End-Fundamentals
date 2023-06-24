@@ -67,3 +67,22 @@ JS Objects:
       In a function, in strict mode, this is undefined.
       In an event, this refers to the element that received the event.
       Methods like call(), apply(), and bind() can refer this to any object.
+  
+    this is not a variable. It is a keyword. You cannot change the value of this.
+  
+  NOTE:
+    When a JavaScript variable is declared with the keyword "new", the variable is created as an object.
+    Do Not Declare Strings, Numbers, and Booleans as Objects!
+    Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+JavaScript Events:
+  - HTML Events:
+    - An HTML event can be something the browser does, or something a user does.
+      Here are some examples of HTML events:
+      An HTML web page has finished loading
+      An HTML input field was changed
+      An HTML button was clicked
+      Often, when events happen, you may want to do something.
+      JavaScript lets you execute code when events are detected.
+      HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+
+      
