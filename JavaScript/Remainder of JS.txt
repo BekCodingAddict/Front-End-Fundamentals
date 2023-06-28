@@ -133,6 +133,7 @@ JS String Methods:
       trimStart()- method works like trim(),but removes whitespace only from the start of a string.
       trimEnd()- method works like trim(), but removes whitespace only from the end of a string.
       padStart()- method pads a string from the start.
+      split() method:A string can be converted to an array .
 
   - Extracting String Characters:
     There are 3 methods for extracting string characters:
@@ -147,3 +148,12 @@ The difference is that the second parameter specifies the length of the extracte
     JavaScript counts positions from zero.
     First position is 0.
     Second position is 1.
+
+  indexOf() method returns the index (position) the first occurrence of a string in a string.
+  lastIndexOf() method returns the index of the last occurrence of a specified text in a string.
+    - Both indexOf(), and lastIndexOf() return -1 if the text is not found:
+      Both methods accept a second parameter as the starting position for the search.
+      The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, 
+      and searches to the beginning of the string.
+
+
