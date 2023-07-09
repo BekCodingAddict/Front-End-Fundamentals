@@ -260,3 +260,37 @@ JavaScript Number Methods:
         - toFixed(2) is perfect for working with money.
       toPrecision()	Returns a number written with a specified length
       ValueOf()	Returns a number as a number
+
+  - Converting Variables to Numbers:
+    - There are 3 JavaScript methods that can be used to convert a variable to a number:
+      - Number()	Returns a number converted from its argument.
+        parseFloat()	Parses its argument and returns a floating point number
+        parseInt()	Parses its argument and returns a whole number:
+          - Stringdagi 1 numberni aniqlaydi
+  
+  - Number Object Methods:
+    - These object methods belong to the Number object:
+      - Number.isInteger()	Returns true if the argument is an integer
+        Number.isSafeInteger()	Returns true if the argument is a safe integer
+        Number.parseFloat()	Converts a string to a number
+        Number.parseInt()	Converts a string to a whole numbe
+
+
+JavaScript Number Properties:
+  - EPSILON	The difference between 1 and the smallest number > 1.
+    MAX_VALUE	The largest number possible in JavaScript
+    MIN_VALUE	The smallest number possible in JavaScript
+    MAX_SAFE_INTEGER	The maximum safe integer (253 - 1)
+    MIN_SAFE_INTEGER	The minimum safe integer -(253 - 1)
+    POSITIVE_INFINITY	Infinity (returned on overflow):
+      - POSITIVE_INFINITY is returned on overflow.
+    NEGATIVE_INFINITY	Negative infinity (returned on overflow)
+    NaN	A "Not-a-Number" value:
+      - NaN is a JavaScript reserved word for a number that is not a legal number.
+
+  - Number Properties Cannot be Used on Variables:
+    - Number properties belong to the JavaScript Number Object.
+      These properties can only be accessed as Number.MAX_VALUE.
+      Using x.MAX_VALUE, where x is a variable or a value, will return undefined:
+
+  

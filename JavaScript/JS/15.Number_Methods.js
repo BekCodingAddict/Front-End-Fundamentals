@@ -91,3 +91,4 @@ console.log('10.33='+Number.parseInt('10.33'));
 console.log('10 6='+Number.parseInt('10 6'));
 console.log('10 Years='+Number.parseInt('10 Years'));
 console.log('years 10='+Number.parseInt('years 10'));
+
