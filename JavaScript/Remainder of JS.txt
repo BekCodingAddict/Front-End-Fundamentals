@@ -336,3 +336,45 @@ JavaScript Arrays:
       The problem is that the JavaScript operator typeof returns "object":
     - Array.isArray():
       To solve this problem ECMAScript 5 (JavaScript 2009) defined a new method Array.isArray()
+    - To solve this problem ECMAScript 5 (JavaScript 2009) defined a new method Array.isArray():
+      const fruits = ["Banana", "Orange", "Apple"];
+      fruits instanceof Array;
+
+--------------------JAVASCRIPT Array MEthods-----------------------------
+Array Methods:
+  - length property returns the length (size) of an array.
+  - toString() converts an array to a string of (comma separated) array values.
+  - join() method also joins all array elements into a string.
+  - Popping and Pushing:
+    - Popping items out of an array, or pushing items into an array.
+    - pop() method removes the last element from an array.
+    - push() method adds a new element to an array (at the end).
+  - shift() method removes the first array element and "shifts" all other elements to a lower index.
+    shift() method returns the value that was "shifted out".
+  - unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements.
+    unshift() method returns the new array length.
+  - NOTE:
+    - Array elements can be deleted using the JavaScript operator delete.
+      delete leaves undefined holes in the array.
+      Use pop() or shift() instead.
+    - JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
+    - Finding Max and Min Values in an Array:
+      - There are no built-in functions for finding the highest or lowest value in a JavaScript array.
+      
+  - concat() method creates a new array by merging (concatenating) existing arrays
+    concat() method does not change the existing arrays. It always returns a new array.
+    concat() method can take any number of array arguments.
+    concat() method can also take strings as arguments.
+  - Flattening an Array:
+    - Flattening an array is the process of reducing the dimensionality of an array.
+      The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+  - splice() method adds new items to an array:
+    - The first parameter (2) defines the position where new elements should be added (spliced in).
+      The second parameter (0) defines how many elements should be removed.
+      splice() method returns an array with the deleted items.
+      With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array.
+
+  - slice() method slices out a piece of an array.
+    slice() method creates a new array.
+    slice() method does not remove any elements from the source array.
+  
