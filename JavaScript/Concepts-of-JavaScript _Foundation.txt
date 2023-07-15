@@ -378,3 +378,20 @@ Array Methods:
     slice() method creates a new array.
     slice() method does not remove any elements from the source array.
   
+--------------------------------JavaScript Sorting Arrays----------------------------------
+- Sorting an Array:
+  - sort() method sorts an array alphabetically:
+    - sort() function sorts values as strings.
+      However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+      Because of this, the sort() method will produce incorrect result when sorting numbers.
+      You can fix this by providing a compare function:
+        - const points = [40, 100, 1, 5, 25, 10];
+          points.sort(function(a, b){return a - b});
+  - reverse() method reverses the elements in an array.
+  - Sorting a whole array is a very inefficient method if you only want to find the highest (or lowest) value.
+  - Math.max.apply to find the highest number in an array:
+    - code:
+      function myArrayMax(arr) {
+        return Math.max.apply(null, arr);
+      }
+    
