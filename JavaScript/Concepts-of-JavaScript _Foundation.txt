@@ -446,4 +446,33 @@ Creating Date Objects:
   - new Date() creates a date object with the current date and time:
   - new Date(date string) creates a date object from a date string:
   - new Date(year, month, ...) creates a date object with a specified date and time.
+  - You cannot omit month. If you supply only one parameter it will be treated as milliseconds.
+Previous Century:
+  - One and two digit years will be interpreted as 19xx:
+      - const d = new Date(99, 11, 24);
 
+new Date(milliseconds):
+  - new Date(milliseconds) creates a new date object as milliseconds plus zero time:
+  - NOTE:
+  |   - JavaScript stores dates as number of milliseconds since January 01, 1970.
+
+Displaying Dates:
+  - toDateString() method converts a date to a more readable format:
+  - toUTCString() method converts a date to a string using the UTC standard:
+  - toISOString() method converts a date to a string using the ISO standard:
+
+----------------------------JavaScript Date Input----------------------------------
+There are generally 3 types of JavaScript date input formats:
+  - ISO Date	"2015-03-25" (The International Standard)
+    Short Date	"03/25/2015"
+    Long Date	"Mar 25 2015" or "25 Mar 2015"
+
+JavaScript ISO Dates:
+  - ISO 8601 is the international standard for the representation of dates and times.
+    The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format.
+  - ISO dates can be written without specifying the day (YYYY-MM):
+  - ISO dates can be written without month and day (YYYY):
+  - ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):
+      - Date and time is separated with a capital T.
+        UTC time is defined with a capital letter Z.
+        If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM instead:
