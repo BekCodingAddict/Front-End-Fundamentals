@@ -395,3 +395,28 @@ Array Methods:
         return Math.max.apply(null, arr);
       }
     
+----------------------JavaScript Array Const------------------------
+Arrays are Not Constants:
+  - The keyword const is a little misleading.
+    It does NOT define a constant array. It defines a constant reference to an array.
+    Because of this, we can still change the elements of a constant array.
+  - Elements Can be Reassigned:
+    - Code:
+      const cars = ["Saab", "Volvo", "BMW"];
+
+      // You can change an element:
+      cars[0] = "Toyota";
+  - Assigned when Declared:
+    JavaScript const variables must be assigned a value when they are declared.
+    Meaning: An array declared with const must be initialized when it is declared.
+    Using const without initializing the array is a syntax error:
+    - Code: 
+      const cars;
+      cars = ["Saab", "Volvo", "BMW"]; //Not work!
+
+An array declared with var does not have block scope.
+Redeclaring Arrays:
+  - Redeclaring an array declared with var is allowed anywhere in a program.
+    var cars = ["Volvo", "BMW"];   // Allowed
+    var cars = ["Toyota", "BMW"];  // Allowed
+    cars = ["Volvo", "Saab"];      // Allowed
