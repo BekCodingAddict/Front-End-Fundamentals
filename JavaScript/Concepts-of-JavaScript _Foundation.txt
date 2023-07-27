@@ -487,3 +487,22 @@ Set Date Methods:
     setMonth()	Set the month (0-11)
     setSeconds()	Set the seconds (0-59)
     setTime()	Set the time (milliseconds since January 1, 1970)
+
+------------------JavaScript Math Object---------------------------------------------
+Math Properties (Constants):
+  - Math.E        // returns Euler's number
+    Math.PI       // returns PI
+    Math.SQRT2    // returns the square root of 2
+    Math.SQRT1_2  // returns the square root of 1/2
+    Math.LN2      // returns the natural logarithm of 2
+    Math.LN10     // returns the natural logarithm of 10
+    Math.LOG2E    // returns base 2 logarithm of E
+    Math.LOG10E   // returns base 10 logarithm of E
+Math Methods: 
+  - Math.round(x)	Returns x rounded to its nearest integer
+    Math.ceil(x)	Returns x rounded up to its nearest integer 
+    Math.floor(x)	Returns x rounded down to its nearest integer
+    Math.trunc(x)	Returns the integer part of x (new in ES6)
+    Math.pow(x, y) returns the value of x to the power of y:
+    Math.sqrt(x) returns the square root of x:
+    
