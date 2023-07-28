@@ -46,3 +46,18 @@ console.log('Math.sqrt:'+Math.sqrt(64));
 //Math.abs()
 console.log('Math.abs:'+Math.abs(-4.7));
 console.log('Math.abs:'+Math.abs(-0.5));
+
+//Math.sin()
+console.log('Math.sin:'+Math.sin(90*Math.PI/180));
+console.log('Math.sin:'+Math.sin(180*Math.PI/180));
+
+//Math.cos()
+console.log('Math.cos:'+Math.cos(0*Math.PI/180));
+console.log('Math.cos:'+Math.cos(2*Math.PI/180));
+
+//Math.min() and Math.max()
+console.log('Math.min:'+Math.min(0,150,30,20,-8,-200));
+console.log('Math.max:'+Math.max(0,150,30,20,-8,-200));
+
+//Math.random()
+console.log('Math.random:'+Math.random());
