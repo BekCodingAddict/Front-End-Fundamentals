@@ -61,3 +61,16 @@ console.log('Math.max:'+Math.max(0,150,30,20,-8,-200));
 
 //Math.random()
 console.log('Math.random:'+Math.random());
+
+//The Math.log() Method
+console.log('Math.log:'+Math.log(1));
+console.log('Math.log:'+Math.log(2));
+console.log('Math.log:'+Math.log(3));
+console.log('Math.log:'+Math.log(10));
+
+//The Math.log2() Method
+console.log('Math.log2:'+Math.log2(8));
+
+//The Math.log10() Method
+console.log('Math.log10:'+Math.log10(1000));
+
