@@ -74,3 +74,4 @@ console.log('Math.log2:'+Math.log2(8));
 //The Math.log10() Method
 console.log('Math.log10:'+Math.log10(1000));
 
+
