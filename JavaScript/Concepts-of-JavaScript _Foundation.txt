@@ -535,5 +535,13 @@ Math Methods:
     tan(x)	Returns the tangent of an angle
     tanh(x)	Returns the hyperbolic tangent of a number
     trunc(x)	Returns the integer part of a number (x)
+    Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):
+      - Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):
 
-    
+-----------------------JavaScript Booleans-------------------------------
+Boolean Values:
+  - Boolean() function to find out if an expression (or a variable) is true:
+  - Everything With a "Value" is True:
+      - Boolean(100)
+        Boolean(3.14)
+        Boolean(-15)
