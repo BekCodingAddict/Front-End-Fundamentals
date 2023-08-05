@@ -545,3 +545,39 @@ Boolean Values:
       - Boolean(100)
         Boolean(3.14)
         Boolean(-15)
+  - Comparing two JavaScript objects always return false.
+
+---------------------JavaScript Comparison and Logical Operators------------
+Comparison and Logical operators are used to test for true or false.
+Comparison Operators:
+  ==	equal to
+  ===	equal value and equal type
+  !=	not equal
+  !==	not equal value or not equal type
+  >	greater than
+  <	less than	
+  >=	greater than or equal to
+  <=	less than or equal to
+
+Logical Operators:
+  &&	and	(x < 10 && y > 1) is true	
+  ||	or	(x == 5 || y == 5) is false	
+  !	not	!(x == y) is true
+
+Conditional (Ternary) Operator:
+  - Syntax:
+      - variablename = (condition) ? value1:value2 
+      - let voteable = (age < 18) ? "Too young":"Old enough";
+The Nullish Coalescing Operator (??):
+  - The ?? operator returns the first argument if it is not nullish (null or undefined).
+    Otherwise it returns the second argument:
+    let name = null;
+    let text = "missing";
+    let result = name ?? text;
+
+The Optional Chaining Operator (?.):
+The ?. operator returns undefined if an object is undefined or null (instead of throwing an error).
+  - // Create an object:
+    const car = {type:"Fiat", model:"500", color:"white"};
+    // Ask for car name:
+    document.getElementById("demo").innerHTML = car?.name;
