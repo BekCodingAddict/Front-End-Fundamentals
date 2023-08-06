@@ -581,3 +581,10 @@ The ?. operator returns undefined if an object is undefined or null (instead of 
     const car = {type:"Fiat", model:"500", color:"white"};
     // Ask for car name:
     document.getElementById("demo").innerHTML = car?.name;
+
+--------------------JavaScript if, else, and else if--------------------
+In JavaScript we have the following conditional statements:
+  - Use if to specify a block of code to be executed, if a specified condition is true
+    Use else to specify a block of code to be executed, if the same condition is false
+    Use else if to specify a new condition to test, if the first condition is false
+    Use switch to specify many alternative blocks of code to be executed
