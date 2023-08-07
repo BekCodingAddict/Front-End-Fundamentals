@@ -588,3 +588,13 @@ In JavaScript we have the following conditional statements:
     Use else to specify a block of code to be executed, if the same condition is false
     Use else if to specify a new condition to test, if the first condition is false
     Use switch to specify many alternative blocks of code to be executed
+
+-------------------JavaScript Switch Statement------------------------
+Note: If you omit the break statement, the next case will be executed even if the evaluation does not match the case.
+The default keyword specifies the code to run if there is no case match:
+  - If default is not the last case in the switch block, remember to end the default case with a break.
+
+Switching Details:
+  - If multiple cases matches a case value, the first case is selected.
+  - If no matching cases are found, the program continues to the default label.
+  - If no default label is found, the program continues to the statement(s) after the switch.
