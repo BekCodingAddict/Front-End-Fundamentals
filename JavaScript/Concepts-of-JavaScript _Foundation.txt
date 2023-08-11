@@ -669,3 +669,14 @@ It lets you loop over iterable data structures such as Arrays, Strings, Maps, No
   - for (variable of iterable) {
     // code block to be executed
     }
+variable - For every iteration the value of the next property is assigned to the variable.
+Variable can be declared with const, let, or var.
+iterable - An object that has iterable properties.
+
+------------------------------JavaScript While Loop--------------------------------------
+The While Loop:
+  - The while loop loops through a block of code as long as a specified condition is true.
+  - Syntax:
+      while (condition) {
+      // code block to be executed
+      }
