@@ -706,3 +706,19 @@ Essential Set Methods:
     values()	Returns an iterator with all the values in a Set
     Property	Description:
       - size	Returns the number of elements in a Set
+Set iteration:
+  - The values() Method:
+    - let text = "";
+      for (const x of letters.values()) {
+        text += x;
+      }
+
+  - The forEach() Method:
+    - // Create a Set
+      const letters = new Set(["a","b","c"]);
+
+      // List all Elements
+      let text = "";
+      letters.forEach (function(value) {
+      text += value;
+    })
