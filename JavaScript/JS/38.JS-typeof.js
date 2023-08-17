@@ -59,3 +59,19 @@ function isDate2(myDate) {
   }
 
   console.log('Result:'+isDate2(myDate));
+
+  let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+  person = null;    // Now value is null, but type is still an object
+
+  //You can also empty an object by setting it to undefined:
+  let person2= {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person2 = undefined;   // Now both value and type is undefined
+
+//The instanceof Operator
+const cars = [1, 2, 3];
+
+console.log(cars instanceof Array);
+console.log(cars instanceof Object);
+console.log(cars instanceof String);
+console.log(cars instanceof Number);
+

@@ -768,8 +768,14 @@ There are 6 types of objects:
     Number
     Boolean
 2 data types that cannot contain values:
-  - null
-    undefined
+  - null:
+      - In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+        Unfortunately, in JavaScript, the data type of null is an object.
+      - You can consider it a bug in JavaScript that typeof null is an object. It should be null.
+
+    undefined:
+      - Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+
 Please observe:
   - The data type of NaN is number
     The data type of an array is object
@@ -815,5 +821,18 @@ ou can check the constructor property to find out if an object is a Date (contai
   - function isDate(myDate) {
       return myDate.constructor.toString().indexOf("Date") > -1;
     }
+Difference Between Undefined and Null:
+undefined and null are equal in value but different in type:
+  - typeof undefined           // undefined
+    typeof null                // object
 
+    null === undefined         // false
+    null == undefined          // true
 
+The instanceof Operator:
+  - The instanceof operator returns true if an object is an instance of the specified object:
+
+The void Operator:
+  - The void operator evaluates an expression and returns undefined. 
+  This operator is often used to obtain the undefined primitive value, 
+  using "void(0)" (useful when evaluating an expression without using the return value).
