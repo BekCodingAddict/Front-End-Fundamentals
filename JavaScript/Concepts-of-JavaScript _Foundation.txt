@@ -775,7 +775,13 @@ There are 6 types of objects:
 
     undefined:
       - Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+    Difference Between Undefined and Null:
+        undefined and null are equal in value but different in type:
+      - typeof undefined           // undefined
+        typeof null                // object
 
+    null === undefined         // false
+    null == undefined          // true
 Please observe:
   - The data type of NaN is number
     The data type of an array is object
@@ -821,13 +827,6 @@ ou can check the constructor property to find out if an object is a Date (contai
   - function isDate(myDate) {
       return myDate.constructor.toString().indexOf("Date") > -1;
     }
-Difference Between Undefined and Null:
-undefined and null are equal in value but different in type:
-  - typeof undefined           // undefined
-    typeof null                // object
-
-    null === undefined         // false
-    null == undefined          // true
 
 The instanceof Operator:
   - The instanceof operator returns true if an object is an instance of the specified object:
@@ -836,3 +835,17 @@ The void Operator:
   - The void operator evaluates an expression and returns undefined. 
   This operator is often used to obtain the undefined primitive value, 
   using "void(0)" (useful when evaluating an expression without using the return value).
+
+--------------------------------JavaScript Type Conversion------------------------------------
+JavaScript variables can be converted to a new variable and another data type:
+  - By the use of a JavaScript function
+    Automatically by JavaScript itself
+Converting Strings to Numbers:
+  - The global method Number() converts a variable (or a value) into a number.
+    A numeric string (like "3.14") converts to a number (like 3.14).
+    An empty string (like "") converts to 0.
+    A non numeric string (like "John") converts to NaN (Not a Number).
+Number Methods:
+  - Number()	Returns a number, converted from its argument
+    parseFloat()	Parses a string and returns a floating point number
+    parseInt()	Parses a string and returns an integer
