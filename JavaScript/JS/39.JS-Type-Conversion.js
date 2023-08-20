@@ -47,3 +47,21 @@ console.log('Date:'+String(Date()));
 
 //The Date method toString() does the same.
 console.log('Date: '+Date().toString());
+
+//Converting Booleans to Numbers
+console.log('false:'+Number(false));
+console.log('true:'+Number(true));
+//Converting Booleans to Strings
+console.log('false:'+String(false));
+console.log('true:'+String(true));
+console.log('false:'+false.toString());
+console.log('false:'+true.toString());
+
+//Automatic Type Conversion
+console.log('5+null:'+(5+null));// because null is converted to 0
+console.log('"5"+null: '+('5'+null));// returns "5null"   because null is converted to "null"
+console.log('"5"+2: '+("5"+2)); // returns "52"      because 2 is converted to "2"
+console.log('"5"-2: '+('5'-2)); // returns 3         because "5" is converted to 5
+console.log('"5"*"2": '+("5"*"2"));
+
+
