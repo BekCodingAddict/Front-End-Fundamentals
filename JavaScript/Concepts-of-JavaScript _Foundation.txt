@@ -849,3 +849,10 @@ Number Methods:
   - Number()	Returns a number, converted from its argument
     parseFloat()	Parses a string and returns a floating point number
     parseInt()	Parses a string and returns an integer
+The Unary + Operator:
+  - The unary + operator can be used to convert a variable to a number:
+    let y = "5";      // y is a string
+    let x = + y;      // x is a number
+Converting Numbers to Strings:
+  - The global method String() can convert numbers to strings.
+    It can be used on any type of numbers, literals, variables, or expressions:
