@@ -933,3 +933,11 @@ Using exec():
     - t searches a string for a specified pattern, and returns the found text as an object.
       If no match is found, it returns an empty (null) object.
       The following example searches a string for the character "e":
+
+----------------------------JavaScript Operator Precedence-----------------------------------------------------
+Explantation:
+  - Operator precedence describes the order in which operations are performed in an arithmetic expression.
+  - Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+    - As in traditional mathematics, multiplication is done first:
+      let x = 100 + 50 * 3;
+  
