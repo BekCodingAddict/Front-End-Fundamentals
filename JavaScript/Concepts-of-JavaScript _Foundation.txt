@@ -941,3 +941,66 @@ Explantation:
     - As in traditional mathematics, multiplication is done first:
       let x = 100 + 50 * 3;
   
+
+----------------------------JavaScript Errors-----------------------------------------
+Throw, and Try...Catch...Finally:
+  - The try statement defines a code block to run (to try).
+  - The catch statement defines a code block to handle any error.
+  - The finally statement defines a code block to run regardless of the result.
+  - The throw statement defines a custom error.
+Try:
+  - The try statement allows you to define a block of code to be tested for errors while it is being executed.
+Catch:
+  - The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+JavaScript Throws Errors:
+  - JavaScript will actually create an Error object with two properties: name and message.
+The throw Statement:
+  - The throw statement allows you to create a custom error.
+    Technically you can throw an exception (throw an error).
+    The exception can be a JavaScript String, a Number, a Boolean or an Object:
+  - If you use throw together with try and catch, you can control program flow 
+    and generate custom error messages.
+The finally Statement:
+  - The finally statement lets you execute code, after try and catch, regardless of the result:
+      try {
+        Block of code to try
+      }catch(err) { 
+        Block of code to handle errors
+      } finally { 
+        Block of code to be executed regardless of the try / catch result
+      }
+The Error Object:
+  - JavaScript has a built in error object that provides error information when an error occurs.
+    The error object provides two useful properties: name and message.
+    Error Object Properties:
+      - name	Sets or returns an error name
+      - message	Sets or returns an error message (a string)
+    - Error Name Values:
+        - EvalError	An error has occurred in the eval() function
+          RangeError	A number "out of range" has occurred
+          ReferenceError	An illegal reference has occurred
+          SyntaxError	A syntax error has occurred
+          TypeError	A type error has occurred
+          URIError	An error in encodeURI() has occurred
+  - Eval Error:
+      - An EvalError indicates an error in the eval() function.
+      - Newer versions of JavaScript do not throw EvalError. Use SyntaxError instead.
+  - Range Error:
+      - A RangeError is thrown if you use a number that is outside the range of legal values.
+  - Reference Error:
+      - A ReferenceError is thrown if you use (reference) a variable that has not been declared:
+  - Syntax Error:
+      - A SyntaxError is thrown if you try to evaluate code with a syntax error.
+  - Type Error:
+      - A TypeError is thrown if you use a value that is outside the range of expected types:
+  - URI (Uniform Resource Identifier) Error:
+      - A URIError is thrown if you use illegal characters in a URI function:
+Non-Standard Error Object Properties:
+  - Mozilla and Microsoft define some non-standard error object properties:
+    fileName (Mozilla)
+    lineNumber (Mozilla)
+    columnNumber (Mozilla)
+    stack (Mozilla)
+    description (Microsoft)
+    number (Microsoft)
+    Do not use these properties in public web sites. They will not work in all browsers.
