@@ -1004,3 +1004,35 @@ Non-Standard Error Object Properties:
     description (Microsoft)
     number (Microsoft)
     Do not use these properties in public web sites. They will not work in all browsers.
+
+-------------------------------JavaScript Scope---------------------------------------
+Scope determines the accessibility (visibility) of variables.
+JavaScript has 3 types of scope:
+  - Block scope
+    Function scope
+    Global scope
+Block Scope:
+  - ES6 introduced two important new JavaScript keywords: let and const.
+    These two keywords provide Block Scope in JavaScript.
+    Variables declared inside a { } block cannot be accessed from outside the block:
+    Example
+    {
+      let x = 2;
+    } // x can NOT be used here
+    Note: Variables declared with the var keyword can NOT have block scope.
+Automatically Global:
+  - If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
+  - In "Strict Mode", undeclared variables are not automatically global.
+Global Variables in HTML:
+  - Global variables defined with the var keyword belong to the window object.
+  - Global variables defined with the let keyword do not belong to the window object.
+  - Warning:
+      - Do NOT create global variables unless you intend to.
+        Your global variables (or functions) can overwrite window variables (or functions).
+        Any function, including the window object, can overwrite your global variables and functions.
+The Lifetime of JavaScript Variables:
+  - The lifetime of a JavaScript variable starts when it is declared.
+  - Function (local) variables are deleted when the function is completed.
+  - In a web browser, global variables are deleted when you close the browser window (or tab).
+Function Arguments:
+  - Function arguments (parameters) work as local variables inside functions.
