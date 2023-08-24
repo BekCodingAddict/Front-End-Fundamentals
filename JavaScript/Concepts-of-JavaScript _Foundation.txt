@@ -1145,3 +1145,45 @@ Future Proof!:
     let public = 1500;      // This will cause an error
 Watch Out!:
   - The "use strict" directive is only recognized at the beginning of a script or a function.
+
+  ----------------------------The JavaScript this Keyword--------------------------------------------
+  What is this?:
+    - In JavaScript, the this keyword refers to an object.
+      Which object depends on how this is being invoked (used or called).
+      The this keyword refers to different objects depending on how it is used:
+    - In an object method, this refers to the object.
+      Alone, this refers to the global object.
+      In a function, this refers to the global object.
+      In a function, in strict mode, this is undefined.
+      In an event, this refers to the element that received the event.
+      Methods like call(), apply(), and bind() can refer this to any object.
+Note:
+  - this is not a variable. It is a keyword. You cannot change the value of this.
+this in a Method:
+  - When used in an object method, this refers to the object.
+this Alone:
+  - When used alone, this refers to the global object.
+this in a Function (Default):
+  - In a function, the global object is the default binding for this.
+this in a Function (Strict):
+  - JavaScript strict mode does not allow default binding.
+    So, when used in a function, in strict mode, this is undefined.
+      - "use strict";
+        function myFunction() {
+          return this;
+        }
+this in Event Handlers:
+  - In HTML event handlers, this refers to the HTML element that received the event:
+      - <button onclick="this.style.display='none'">
+          Click to Remove Me!
+        </button>
+Function Borrowing:
+  - With the bind() method, an object can borrow a method from another object.
+    This example creates 2 objects (person and member).
+    The member object borrows the fullname method from the person object:
+This Precedence:
+  - To determine which object this refers to; use the following precedence of order.
+    1	bind()
+    2	apply() and call()
+    3	Object method
+    4	Global scope
