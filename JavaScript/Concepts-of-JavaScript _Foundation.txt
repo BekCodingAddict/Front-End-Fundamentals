@@ -1187,3 +1187,25 @@ This Precedence:
     2	apply() and call()
     3	Object method
     4	Global scope
+
+------------------------------JavaScript Arrow Function--------------------------------------
+Arrow functions allow us to write shorter function syntax:
+  - let myFunction = (a, b) => a * b;
+NOTE:
+  - It gets shorter! If the function has only one statement,
+    and the statement returns a value, you can remove the brackets and the return keyword:
+      - hello = () => "Hello World!";
+  Note: Note: This works only if the function has only one statement.
+  - If you have parameters, you pass them inside the parentheses:
+    - hello = (val) => "Hello " + val;
+  - In fact, if you have only one parameter, you can skip the parentheses as well:
+    - hello = val => "Hello " + val;
+What About this?:
+  - The handling of this is also different in arrow functions compared to regular functions.
+    In short, with arrow functions there are no binding of this.
+    In regular functions the this keyword represented the object that called the function,
+    which could be the window, the document, a button or whatever.
+    With arrow functions the this keyword always represents the object that defined the arrow function.
+  - Note:
+    - Remember these differences when you are working with functions. 
+      Sometimes the behavior of regular functions is what you want, if not, use arrow functions.
