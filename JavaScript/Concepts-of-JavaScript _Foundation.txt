@@ -1769,3 +1769,101 @@ Delay JavaScript Loading:
 Avoid Using with:
   - Avoid using the with keyword. It has a negative effect on speed. It also clutters up JavaScript scopes.
   - The with keyword is not allowed in strict mode.
+
+  -------------------------JavaScript Versions----------------------------------------
+LINK: https://www.w3schools.com/js/js_versions.asp
+JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+ECMAScript is the official name of the language.
+ECMAScript versions have been abbreviated to ES1, ES2, ES3, ES5, and ES6.
+Since 2016, versions are named by year (ECMAScript 2016, 2017, 2018, 2019, 2020).
+ECMAScript 2009, also known as ES5, was the first major revision to JavaScript.
+Reserved Words as Property Names:
+  - ES5 allows reserved words as property names:
+    Object Example: 
+      - var obj = {name: "John", new: "yes"}
+
+Array methods:
+  - isArray() method checks whether an object is an array.
+  - forEach() method calls a function once for each array element.
+    Performs the specified action for each element in an array.
+  - Array map() Calls a defined callback function on each element of an array, 
+    and returns an array that contains the results.
+  - Array filter() Returns the elements of an array that meet the condition specified in a callback function.
+  - Array reduce() Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result,
+     and is provided as an argument in the next call to the callback function.
+  - Array reduceRight() Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result,
+     and is provided as an argument in the next call to the callback function.
+  - Array every() Determines whether all the members of an array satisfy the specified test.
+  - Array some() Determines whether the specified callback function returns true for any element of an array.
+  - Array indexOf() Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
+
+JSON:
+  - JSON.parse() is used to convert the text into a JavaScript object:
+  - Date toJSON() toJSON() converts a Date object into a string, formatted as a JSON date.
+    JSON dates have the same format as the ISO-8601 standard: YYYY-MM-DDTHH:mm:ss.sssZ:
+  - WARNING !!!
+    JSON does not allow trailing commas.
+     JSON Objects:
+      - // Allowed:
+        var person = '{"firstName":"John", "lastName":"Doe", "age":46}'
+        JSON.parse(person) 
+
+        // Not allowed:
+        var person = '{"firstName":"John", "lastName":"Doe", "age":46,}'
+        JSON.parse(person)
+    - JSON Arrays:
+      - // Allowed:
+        points = [40, 100, 1, 5, 25, 10]
+
+        // Not allowed:
+        points = [40, 100, 1, 5, 25, 10,]
+Object.defineProperty():
+  - Object.defineProperty() is a new Object method in ES5.
+    It lets you define an object property and/or change a property's value and/or metadata.
+E5 Object Methods:
+  - // Create object with an existing object as prototype
+    Object.create(parent, donor)
+
+    // Adding or changing an object property
+    Object.defineProperty(object, property, descriptor)
+
+    // Adding or changing object properties
+    Object.defineProperties(object, descriptors)
+
+    // Accessing Properties
+    Object.getOwnPropertyDescriptor(object, property)
+
+    // Returns all properties as an array
+    Object.getOwnPropertyNames(object)
+
+    // Accessing the prototype
+    Object.getPrototypeOf(object)
+
+    // Returns enumerable properties as an array
+    Object.keys(object)
+Protecting Objects:
+  - // Prevents adding properties to an object
+    Object.preventExtensions(object)
+
+   // Returns true if properties can be added to an object
+   Object.isExtensible(object)
+
+   // Prevents changes of object properties (not values)
+    Object.seal(object)
+
+   // Returns true if object is sealed
+   Object.isSealed(object)
+
+   // Prevents any changes to an object
+   Object.freeze(object)
+
+   // Returns true if object is frozen
+   Object.isFrozen(object)
+Trailing Commas
+ES5 allows trailing commas in object and array definitions:
+  - Object Example
+    person = {
+      firstName: "John",
+      lastName: " Doe",
+      age: 46,
+    }
