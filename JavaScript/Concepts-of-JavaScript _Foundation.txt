@@ -1867,3 +1867,81 @@ ES5 allows trailing commas in object and array definitions:
       lastName: " Doe",
       age: 46,
     }
+
+---------------------------Javascript ES6-------------------------------------------
+ECMAScript 2015 was the second major revision to JavaScript.
+ECMAScript 2015 is also known as ES6 and ECMAScript 6.
+This chapter describes the most important features of ES6.
+JavaScript let:
+  - The let keyword allows you to declare a variable with block scope.
+JavaScript const:
+  - The const keyword allows you to declare a constant (a JavaScript variable with a constant value).
+    Constants are similar to let variables, except that the value cannot be changed.
+Arrow Functions:
+  - Arrow functions allows a short syntax for writing function expressions.
+    You don't need the function keyword, the return keyword, and the curly brackets.
+  - Arrow functions do not have their own this. They are not well suited for defining object methods.
+    Arrow functions are not hoisted. They must be defined before they are used.
+    Using const is safer than using var, because a function expression is always a constant value.
+    You can only omit the return keyword and the curly brackets if the function is a single statement. 
+    Because of this, it might be a good habit to always keep them:
+  - The Spread (...) Operator:
+    - The ... operator expands an iterable (like an array) into more elements:
+    - The ... operator can be used to expand an iterable into more arguments for function calls:
+      - Example:
+        const numbers = [23,55,21,87,56];
+        let maxValue = Math.max(...numbers);
+The For/Of Loop:
+  - The JavaScript for/of statement loops through the values of an iterable objects.
+    for/of lets you loop over data structures that are iterable such as Arrays, Strings, Maps, NodeLists, and more.
+    The for/of loop has the following syntax:
+    for (variable of iterable) {
+      // code block to be executed
+    }
+  - variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+    iterable - An object that has iterable properties.
+JavaScript Maps:
+  - Being able to use an Object as a key is an important Map feature.
+JavaScript Classes:
+  - JavaScript Classes are templates for JavaScript Objects.
+    Use the keyword class to create a class.
+    Always add a method named constructor():
+    Syntax
+    class ClassName {
+       constructor() { ... }
+    }
+JavaScript Promises:
+  - A Promise is a JavaScript object that links "Producing Code" and "Consuming Code".
+    "Producing Code" can take some time and "Consuming Code" must wait for the result.
+  - Promise Syntax:
+    - const myPromise = new Promise(function(myResolve, myReject) {
+      // "Producing Code" (May take some time)
+
+      myResolve(); // when successful
+      myReject();  // when error
+      });
+
+      // "Consuming Code" (Must wait for a fulfilled Promise).
+      myPromise.then(
+        function(value) { /* code if successful */ },
+        function(error) { /* code if some error */ }
+      );
+The Symbol Type:
+  - A JavaScript Symbol is a primitive datatype just like Number, String, or Boolean.
+    It represents a unique "hidden" identifier that no other code can accidentally access.
+    For instance, if different coders want to add a person.id property to a person 
+    object belonging to a third-party code, they could mix each others values.
+  - Note:
+    Symbols are always unique.
+    If you create two symbols with the same description they will have different values:
+    Symbol("id") == Symbol("id"); // false
+Default Parameter Values:
+  - ES6 allows function parameters to have default values.
+Function Rest Parameter:
+  - The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
+String.includes():
+  - The includes() method returns true if a string contains a specified value, otherwise false:
+String.startsWith():
+  - The startsWith() method returns true if a string begins with a specified value, otherwise false:
+String.endsWith():
+  - The endsWith() method returns true if a string ends with a specified value, otherwise false:
