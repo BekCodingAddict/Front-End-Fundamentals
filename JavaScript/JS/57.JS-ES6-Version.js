@@ -104,3 +104,24 @@ console.log('result:'+text.endsWith('doe'));
 
 const myArr=Array.from('ABCDEFG');
 console.log('myArr:'+myArr+' type: '+typeof myArr);
+
+ const numbers2 = [4, 9, 16, 25, 29];
+let first = numbers2.find(myFunction);
+function myFunction(value, index, array) {
+    return value > 18;
+  }
+console.log('frist:'+first);
+console.log('is integer:'+Number.isInteger(10.6));
+console.log('is integer:'+Number.isSafeInteger(211212121223233333333121));
+
+console.log('10/0: '+isFinite(10/0));
+console.log('10/0 : '+isFinite(10/1));
+
+console.log('is nan: '+isNaN('Hello'));
+
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+const f=fruits2.entries();
+
+for (let x of f){
+    console.log(x);
+}
