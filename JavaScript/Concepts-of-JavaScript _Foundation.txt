@@ -2057,3 +2057,59 @@ Revised Function toString():
     From 2019, toString() must return the source code of the function including comments, spaces, and syntax details.
     Before 2019, different browsers returned different variants of the function (like without comments and spaces). 
     From 2019 the function should be returned exactly as it is written.
+
+-------------------------------ECMAScript 2020---------------------------------------------------------------------
+JavaScript BigInt:
+  - JavaScript BigInt variables are used to store big integer values that are too big to be represented by a a normal JavaScript Number.
+    JavaScript integers are only accurate up to about 15 digits.
+    Integer Example:
+      - let x = 999999999999999;
+        let y = 9999999999999999; // too big
+    BigInt Example:
+      - let x = 9999999999999999;
+        let y = 9999999999999999n;
+  - To create a BigInt, append n to the end of an integer or call BigInt():
+    - let x = 1234567890123456789012345n;
+      let y = BigInt(1234567890123456789012345)
+JavaScript String matchAll():
+  - Before ES2020 there was no string method that could be used to search for all occurrences of a string in a string.
+    - const iterator = text.matchAll("Cats");
+  - If the parameter is a regular expression, the global flag (g) must be set set, otherwise a TypeError is thrown.
+    - const iterator = text.matchAll(/Cats/g);
+The Nullish Coalescing Operator (??):
+  - The ?? operator returns the first argument if it is not nullish (null or undefined).
+    Otherwise it returns the second.
+The Optional Chaining Operator (?.):
+  - The Optional Chaining Operator returns undefined if an object is undefined or null (instead of throwing an error).
+The &&= Operator:
+  - The Logical AND Assignment Operator is used between two values.
+    If the first value is true, the second value is assigned.
+The ||= Operator:
+  - The Logical OR Assignment Operator is used between two values.
+    If the first value is false, the second value is assigned.
+The ??= Operator:
+  - The Nullish Coalescing Assignment Operator is used between two values.
+    If the first value is undefined or null, the second value is assigned
+
+-----------------------------------ECMAScript 2021----------------------------------------------------
+JavaScript String ReplaceAll():
+  - The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+    If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+JavaScript Numeric Separator (_):
+  - ES2021 intoduced the numeric separator (_) to make numbers more readable:
+    - const num = 1_000_000_000;
+  - The numeric separator is only for visual use.
+  - The numeric separator can be placed anywhere in a number:
+  - NOTE:
+    - The numeric separator is not allowed at the beginning or at the end of a number.
+      In JavaScript only variables can start with _.
+JavaScript Array at():
+  - ES2022 intoduced the array method at():
+  - The at() method returns an indexed element from an array.
+  - The at() method returns the same as [].
+  - The at() method is supported in all modern browsers since March 2022:
+JavaScript String at():
+  - ES2022 intoduced the string method at():
+  - The at() method returns an indexed element from an string.
+  - The at() method returns the same as [].
+  - The at() method is supported in all modern browsers since March 2022:
