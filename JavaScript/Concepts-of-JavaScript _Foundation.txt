@@ -1978,3 +1978,82 @@ JavaScript String Padding:
     - Object.entries() also makes it simple to convert objects to maps:
       - const fruits = {Bananas:300, Oranges:200, Apples:500};
         const myMap = new Map(Object.entries(fruits));
+JavaScript Object Values:
+  - Object.values() are similar to Object.entries(), but returns a single dimension array of the object values:
+JavaScript Async Functions:
+async function myDisplay() {
+  let myPromise = new Promise(function(myResolve, myReject) {
+    setTimeout(function() { myResolve("I love You !!"); }, 3000);
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+
+--------------------------ECMAScript 2018---------------------------------------------
+JavaScript Asynchronous Iteration:
+  - ECMAScript 2018 added asynchronous iterators and iterables.
+    With asynchronous iterables, we can use the await keyword in for/of loops.
+JavaScript Promise.finally:
+  - ECMAScript 2018 finalizes the full implementation of the Promise object with Promise.finally:
+    - Example:
+      let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
+      x; // 1
+      y; // 2
+      z; // { a: 3, b: 4 }
+JavaScript Threads:
+  - In JavaScript you use the Web Workers API to create threads.
+  - Worker threads are used to execute code in the background so that the main program can continue execution.
+  - Worker threads run simultaneously with the main program. Simultaneous execution of different parts of a program can be time-saving.
+JavaScript Shared Memory:
+  - Shared memory is a feature that allows threads (different parts of a program) to access and update the same data in the same memory.
+    Instead of passing data between threads, you can pass a SharedArrayBuffer object that points to the memory where data is saved.
+SharedArrayBuffer:
+  - A SharedArrayBuffer object represents a fixed-length raw binary data buffer similar to the ArrayBuffer object.
+
+------------------------ECMAScript 2019----------------------------------------------
+Warning
+These features are relatively new.
+Older browsers may need an alternative code (Polyfill)
+JavaScript String trimStart():
+  - ES2019 added the String method trimStart() to JavaScript.
+    The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+JavaScript String trimEnd(): 
+  - ES2019 added the String method trimEnd() to JavaScript.
+    The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+JavaScript Object fromEntries():
+  - ES2019 added the Object method fromEntries() to JavaScript.
+    The fromEntries() method creates an object from iterable key / value pairs.
+Optional catch Binding:
+  - From ES2019 you can omit the catch parameter if you don't need it:
+    - Example:
+      Before 2019:
+      
+      try {
+        // code
+      } catch (err) {
+        // code
+      }
+      After 2019:
+      try {
+        // code
+      } catch {
+        // code
+      }
+JavaScript Array flat():
+  - ES2019 added the Array flat() method to JavaScript.
+    The flat() method creates a new array by flattening a nested array.
+JavaScript Array flatMap():
+  - ES2019 added the Array flatMap() method to JavaScript.
+    The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
+Stable Array sort():
+  - ES2019 revised the Array sort() method.
+    Before 2019, the specification allowed unstable sorting algorithms such as QuickSort.
+    After ES2019, browsers must use a stable sorting algorithm:
+    When sorting elements on a value, the elements must keep their relative position to other elements with the same value.
+Revised Function toString():
+  - ES2019 revised the Function toString() method.
+    The toString() method returns a string representing the source code of a function.
+    From 2019, toString() must return the source code of the function including comments, spaces, and syntax details.
+    Before 2019, different browsers returned different variants of the function (like without comments and spaces). 
+    From 2019 the function should be returned exactly as it is written.
