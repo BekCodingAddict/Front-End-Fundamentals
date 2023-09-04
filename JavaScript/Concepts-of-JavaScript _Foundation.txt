@@ -2113,3 +2113,11 @@ JavaScript String at():
   - The at() method returns an indexed element from an string.
   - The at() method returns the same as [].
   - The at() method is supported in all modern browsers since March 2022:
+
+------------------------------JavaScript History-------------------------------------------------
+JavaScript / ECMAScript:
+  - JavaScript was invented by Brendan Eich in 1995.
+    It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+  - After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop 
+    JavaScript for the Firefox browser. Mozilla's latest version was 1.8.5. (Identical to ES5).
+    Internet Explorer (IE4) was the first browser to support ECMA-262 Edition 1 (ES1).
