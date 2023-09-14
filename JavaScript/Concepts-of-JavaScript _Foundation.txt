@@ -2239,3 +2239,13 @@ Property Attributes:
     Other attributes are: enumerable, configurable, and writable.
     These attributes define how the property can be accessed (is it readable?, is it writable?)
     In JavaScript, all attributes can be read, but only the value attribute can be changed (and only if the property is writable).
+Prototype Properties:
+  - JavaScript objects inherit the properties of their prototype.
+  - The delete keyword does not delete inherited properties, but if you delete a prototype property, 
+    it will affect all objects inherited from the prototype.
+How to Display JavaScript Objects?
+  - Displaying a JavaScript object will output [object Object].
+  - You must use person[x] in the loop. person.x will not work (Because x is a variable).
+  - Any JavaScript object can be converted to an array using Object.values():
+Stringify Functions:
+  - JSON.stringify will not stringify functions:
