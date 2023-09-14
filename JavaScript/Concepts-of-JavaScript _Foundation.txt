@@ -2266,3 +2266,33 @@ JavaScript Object Constructors:
   - It is considered good practice to name constructor functions with an upper-case first letter.
   - In a constructor function this does not have a value. It is a substitute for the new object.
     The value of this will become the new object when a new object is created.
+Adding a Property to a Constructor:
+  - You cannot add a new property to an object constructor the same way you add a new property to an existing object:
+  - To add a new property to a constructor, you must add it to the constructor function:
+Built-in JavaScript Constructors:
+  - JavaScript has built-in constructors for native objects:
+  - The Math() object is not in the list. Math is a global object. The new keyword cannot be used on Math.
+JavaScript Object Prototypes:
+  - All JavaScript objects inherit properties and methods from a prototype.
+  - NOTE: We also learned that you can not add a new property to an existing object constructor:
+  - To add a new property to a constructor, you must add it to the constructor function:
+Prototype Inheritance:
+  - Date objects inherit from Date.prototype
+  - Array objects inherit from Array.prototype
+  - Person objects inherit from Person.prototype
+    The Object.prototype is on the top of the prototype inheritance chain:
+    Date objects, Array objects, and Person objects inherit from Object.prototype.
+Adding Properties and Methods to Objects:
+  - Sometimes you want to add new properties (or methods) to all existing objects of a given type.
+  - Sometimes you want to add new properties (or methods) to an object constructor.
+Using the prototype Property:
+  - The JavaScript prototype property allows you to add new properties to object constructors:
+  - Example:
+    function Person(first, last, age, eyecolor) {
+      this.firstName = first;
+      this.lastName = last;
+      this.age = age;
+      this.eyeColor = eyecolor;
+    }
+
+Person.prototype.nationality = "English";
