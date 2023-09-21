@@ -2345,11 +2345,52 @@ JavaScript Maps:
   - The forEach() method invokes a callback for each key/value pair in a Map:
   - The entries() method returns an iterator object with the [key,values] in a Map:
   - The keys() method returns an iterator object with the keys in a Map:
-  
+  - The values() method returns an iterator object with the values in a Map:
 JavaScript Objects vs Maps:
   - Not directly iterable	Directly iterable
   - Do not have a size property	Have a size property
   - Keys must be Strings (or Symbols)	Keys can be any datatype
   - Keys are not well ordered	Keys are ordered by insertion
   - Have default keys	Do not have default keys
- 
+Being able to use objects as keys is an important Map feature.
+
+---------------------------------JavaScript Function-----------------------------------
+JavaScript Function Definitions:
+  - JavaScript functions are defined with the function keyword.
+  - You can use a function declaration or a function expression.
+  - NOTE: Semicolons are used to separate executable JavaScript statements.
+    Since a function declaration is not an executable statement,
+    it is not common to end it with a semicolon.
+Function Expressions:
+  - A JavaScript function can also be defined using an expression.
+  - A function expression can be stored in a variable:
+  - After a function expression has been stored in a variable,
+    the variable can be used as a function:
+  - The function above is actually an anonymous function (a function without a name).
+    Functions stored in variables do not need function names.
+    They are always invoked (called) using the variable name.
+  - The function above ends with a semicolon because it is a part of an executable statement.
+The Function() Constructor:
+  - Functions can also be defined with a built-in JavaScript function constructor called Function().
+  - Most of the time, you can avoid using the new keyword in JavaScript.
+Self-Invoking Functions:
+  - Function expressions can be made "self-invoking".
+  - A self-invoking expression is invoked (started) automatically, without being called.
+  - Function expressions will execute automatically if the expression is followed by ().
+  - You cannot self-invoke a function declaration.
+  - You have to add parentheses around the function to indicate that it is a function expression:
+JavaScript functions can be used in expressions:
+  - The arguments.length property returns the number of arguments received when the function was invoked:
+  - The typeof operator in JavaScript returns "function" for functions.
+  - But, JavaScript functions can best be described as objects.
+  - JavaScript functions have both properties and methods.
+  - The toString() method returns the function as a string:
+A function defined as the property of an object, is called a method to the object.
+A function designed to create new objects, is called an object constructor.
+Arrow Functions:
+  - Arrow functions allows a short syntax for writing function expressions.
+  - You don't need the function keyword, the return keyword, and the curly brackets.
+  - Arrow functions do not have their own this. They are not well suited for defining object methods.
+  - Arrow functions are not hoisted. They must be defined before they are used.
+  - Using const is safer than using var, because a function expression is always constant value.
+  - You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
