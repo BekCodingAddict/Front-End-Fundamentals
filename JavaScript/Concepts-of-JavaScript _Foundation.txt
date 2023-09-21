@@ -2323,3 +2323,33 @@ JavaScript Sets:
   - A Set has no keys. keys() returns the same as values().This makes Sets compatible with Maps.
   - A Set has no keys.entries() returns [value,value] pairs instead of [key,value] pairs.
     This makes Sets compatible with Maps:
+JavaScript Maps:
+  - A Map holds key-value pairs where the keys can be any datatype.
+  - A Map remembers the original insertion order of the keys.
+  - A Map has a property that represents the size of the map.
+  - Map Methods:
+    - new Map()	Creates a new Map object
+    - set()	Sets the value for a key in a Map 
+    - get()	Gets the value for a key in a Map
+    - clear()	Removes all the elements from a Map
+    - delete()	Removes a Map element specified by a key
+    - has()	Returns true if a key exists in a Map
+    - forEach()	Invokes a callback for each key/value pair in a Map
+    - entries()	Returns an iterator object with the [key, value] pairs in a Map
+    - keys()	Returns an iterator object with the keys in a Map
+    - values()	Returns an iterator object of the values in a Map
+    - size	Returns the number of Map elements
+  - You can add elements to a Map with the set() method:
+    - The set() method can also be used to change existing Map values:
+  - The get() method gets the value of a key in a Map:
+  - The forEach() method invokes a callback for each key/value pair in a Map:
+  - The entries() method returns an iterator object with the [key,values] in a Map:
+  - The keys() method returns an iterator object with the keys in a Map:
+  
+JavaScript Objects vs Maps:
+  - Not directly iterable	Directly iterable
+  - Do not have a size property	Have a size property
+  - Keys must be Strings (or Symbols)	Keys can be any datatype
+  - Keys are not well ordered	Keys are ordered by insertion
+  - Have default keys	Do not have default keys
+ 
