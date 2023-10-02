@@ -2394,3 +2394,28 @@ Arrow Functions:
   - Arrow functions are not hoisted. They must be defined before they are used.
   - Using const is safer than using var, because a function expression is always constant value.
   - You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+JavaScript Function Parameters:
+  - JavaScript function definitions do not specify data types for parameters.
+  - JavaScript functions do not perform type checking on the passed arguments.
+  - JavaScript functions do not check the number of arguments received.
+JavaScript Function Invocation:
+  - The code inside a function is not executed when the function is defined.
+  - The code inside a function is executed when the function is invoked.
+  - It is common to use the term "call a function" instead of "invoke a function".
+  - It is also common to say "call upon a function", "start a function", or "execute a function".
+NOTE:
+  - This is a common way to invoke a JavaScript function, but not a very good practice.
+    Global variables, methods, or functions can easily create name conflicts and bugs in the global object.
+The Global Object:
+  - When a function is called without an owner object, the value of this becomes the global object.
+    In a web browser the global object is the browser window.
+Invoking a Function with a Function Constructor:
+  - If a function invocation is preceded with the new keyword, it is a constructor invocation.
+Note:
+  -The this keyword in the constructor does not have a value.
+  - The value of this will be the new object created when the function is invoked.
+JavaScript Function call():
+  - With the call() method, you can write a method that can be used on different objects.
+Method Reuse:
+  - apply() method, you can write a method that can be used on different objects.
+  - Math. max() method returns the number with the highest value.
