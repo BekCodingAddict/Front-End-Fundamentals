@@ -2437,3 +2437,15 @@ JavaScript Closures:
   - This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope.
   - This is called a JavaScript closure. It makes it possible for a function to have "private" variables.
   - The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
+-----------------------------JavaScript Classes------------------------------------------
+Note:  A JavaScript class is not an object.It is a template for JavaScript objects.
+The Constructor Method:
+  - It has to have the exact name "constructor"
+  - It is executed automatically when a new object is created
+  - It is used to initialize object properties
+"use strict":
+  - The syntax in classes must be written in "strict mode".
+  - You will get an error if you do not follow the "strict mode" rules.
+Class Inheritance:
+  - To create a class inheritance, use the extends keyword.
+  - A class created with a class inheritance inherits all the methods from another class:
