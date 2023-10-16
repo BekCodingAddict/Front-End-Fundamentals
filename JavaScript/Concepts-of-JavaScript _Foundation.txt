@@ -2449,3 +2449,29 @@ The Constructor Method:
 Class Inheritance:
   - To create a class inheritance, use the extends keyword.
   - A class created with a class inheritance inherits all the methods from another class:
+
+ ----------------------------JavaScript Callbacks--------------------------------------
+"I will call back later!"
+A callback is a function passed as an argument to another function
+This technique allows a function to call another function
+A callback function can run after another function has finished
+JavaScript Callbacks:
+  - A callback is a function passed as an argument to another function.
+  - NOTE: When you pass a function as an argument, remember not to use parenthesis.
+When to Use a Callback?:
+  - Where callbacks really shine are in asynchronous functions,
+     where one function has to wait for another function (like waiting for a file to load).
+Asynchronous JavaScript:
+"I will finish later!"
+Functions running in parallel with other functions are called asynchronous
+A good example is JavaScript setTimeout()
+In the real world, callbacks are most often used with asynchronous functions.
+
+  - Instead of passing the name of a function as an argument to another function, 
+    you can always pass a whole function instead
+Callback Alternatives: 
+  - With asynchronous programming, JavaScript programs can start long-running tasks,
+   and continue running other tasks in paralell.
+   But, asynchronus programmes are difficult to write and difficult to debug.
+   Because of this, most modern asynchronous JavaScript methods don't use callbacks. Instead, in JavaScript,
+   asynchronous programming is solved using Promises instead.
