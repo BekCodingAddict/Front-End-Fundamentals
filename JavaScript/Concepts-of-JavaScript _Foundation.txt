@@ -2493,3 +2493,16 @@ JavaScript Promise Object:
 Note:
   - You cannot access the Promise properties state and result.
   - You must use a Promise method to handle promises.
+JavaScript Async:
+  - "async and await make promises easier to write"
+  - async makes a function return a Promise
+  - await makes a function wait for a Promise
+Async Syntax:
+  - The keyword async before a function makes the function return a promise:
+Await Syntax:
+  - The await keyword can only be used inside an async function.
+  - The await keyword makes the function pause the execution and wait for a resolved promise before it continues:
+Note: 
+  - The two arguments (resolve and reject) are pre-defined by JavaScript.
+  - We will not create them, but call one of them when the executor function is ready.
+  - Very often we will not need a reject function.
