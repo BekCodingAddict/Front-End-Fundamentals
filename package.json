@@ -8,5 +8,8 @@
   },
   "author": "Otabek Sotvoldiev",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  }
 }

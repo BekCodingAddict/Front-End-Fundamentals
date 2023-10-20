@@ -2600,3 +2600,14 @@ Finding HTML Element by Id:
   - If the element is found, the method will return the element as an object (in element).
   - If the element is not found, element will contain null.
 
+Finding HTML Elements by CSS Selectors: 
+  - If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, 
+    values of attributes, etc), use the querySelectorAll() method.
+Changing HTML Content:
+  - The easiest way to modify the content of an HTML element is by using the innerHTML property.
+Changing the Value of an Attribute:
+  - use this syntax:
+    - document.getElementById(id).attribute = new value
+document.write():
+  - document.write() can be used to write directly to the HTML output stream.
+  - NOTE: - Never use document.write() after the document is loaded. It will overwrite the document.
