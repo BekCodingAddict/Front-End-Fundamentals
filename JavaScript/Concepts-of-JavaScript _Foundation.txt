@@ -2643,3 +2643,10 @@ Constraint Validation CSS Pseudo Selectors:
     :optional	          Selects input elements with no "required" attribute specified
     :required	          Selects input elements with the "required" attribute specified
     :valid	            Selects input elements with valid values
+JavaScript HTML DOM - Changing CSS:
+  - Changing HTML Style:
+    - Syntax: document.getElementById(id).style.property = new style
+
+JavaScript HTML DOM Animation:
+  - The container element should be created with style = "position: relative".
+  - The animation element should be created with style = "position: absolute".
