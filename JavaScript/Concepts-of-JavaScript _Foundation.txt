@@ -2650,3 +2650,22 @@ JavaScript HTML DOM - Changing CSS:
 JavaScript HTML DOM Animation:
   - The container element should be created with style = "position: relative".
   - The animation element should be created with style = "position: absolute".
+JavaScript HTML DOM Events:
+  - Examples of HTML events:
+    - When a user clicks the mouse
+    - When a web page has loaded
+    - When an image has been loaded
+    - When the mouse moves over an element
+    - When an input field is changed
+    - When an HTML form is submitted
+    - When a user strokes a key
+  - The onload and onunload Events:
+    - The onload and onunload events are triggered when the user enters or leaves the page.
+    - The onload event can be used to check the visitor's browser type and browser version,
+      and load the proper version of the web page based on the information.
+  - The onmouseover and onmouseout Events: 
+    - The onmouseover and onmouseout events can be used to trigger a 
+      function when the user mouses over, or out of, an HTML elemen
+  - The onmousedown, onmouseup and onclick Events:
+    - The onmousedown, onmouseup, and onclick events are all parts of a mouse-click. First when a mouse-button is clicked, the onmousedown event is triggered, then, when the mouse-button is released, the onmouseup event is triggered,
+     finally, when the mouse-click is completed, the onclick event is triggered.
