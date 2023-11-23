@@ -2669,3 +2669,50 @@ JavaScript HTML DOM Events:
   - The onmousedown, onmouseup and onclick Events:
     - The onmousedown, onmouseup, and onclick events are all parts of a mouse-click. First when a mouse-button is clicked, the onmousedown event is triggered, then, when the mouse-button is released, the onmouseup event is triggered,
      finally, when the mouse-click is completed, the onclick event is triggered.
+JavaScript HTML DOM Navigation:
+  - DOM Nodes:
+    -  According to the W3C HTML DOM standard, everything in an HTML document is a node:
+      - The entire document is a document node
+      - Every HTML element is an element node
+      - The text inside HTML elements are text nodes
+      - Every HTML attribute is an attribute node (deprecated)
+      - All comments are comment nodes
+    - With the HTML DOM, all nodes in the node tree can be accessed by JavaScript.
+  - Node Relationships:
+    - The nodes in the node tree have a hierarchical relationship to each other.
+    - The terms parent, child, and sibling are used to describe the relationships.
+      -  In a node tree, the top node is called the root (or root node)
+      - Every node has exactly one parent, except the root (which has no parent)
+      - A node can have a number of children
+      - Siblings (brothers or sisters) are nodes with the same parent
+  - Navigating Between Nodes:
+    - You can use the following node properties to navigate between nodes with JavaScript:
+      - parentNode
+      - childNodes[nodenumber]
+      - firstChild
+      - lastChild
+      - nextSibling
+      - previousSibling
+  - Notic: A common error in DOM processing is to expect an element node to contain text.
+  - Accessing the innerHTML property is the same as accessing the nodeValue of the first child:
+    - myTitle = document.getElementById("demo").firstChild.nodeValue;
+    - myTitle = document.getElementById("demo").childNodes[0].nodeValue;
+  - DOM Root Nodes:
+    - There are two special properties that allow access to the full document:
+      - document.body - The body of the document
+      - document.documentElement - The full document
+  - The nodeName Property:
+    - The nodeName property specifies the name of a node:
+      - nodeName is read-only
+      - nodeName of an element node is the same as the tag name
+      - nodeName of an attribute node is the attribute name
+      - nodeName of a text node is always #text
+      - nodeName of the document node is always #document
+  - Note: nodeName always contains the uppercase tag name of an HTML element.
+  - The nodeValue Property:
+    - nodeValue for element nodes is null
+    - nodeValue for text nodes is the text itself
+    - nodeValue for attribute nodes is the attribute value
+  - The nodeType Property:
+    - The nodeType property is read only. It returns the type of a node.
+  - Notice: Type 2 is deprecated in the HTML DOM (but works). It is not deprecated in the XML DOM.
