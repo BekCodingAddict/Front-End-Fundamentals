@@ -2787,3 +2787,44 @@ JavaScript Window Screen:
    - The window.location.protocol property returns the web protocol of the page.
    - The window.location.port property returns the number of the internet host port (of the current page).
    - The window.location.assign() method loads a new document.
+- JavaScript Window Navigator:
+  - The window.navigator object contains information about the visitor's browser.
+  - The cookieEnabled property returns true if cookies are enabled, otherwise false:
+  - The appName property returns the application name of the browser:
+  - Warning
+    - This property is removed (deprecated) in the latest web standard.
+    - Most browsers (IE11, Chrome, Firefox, Safari) returns Netscape as appName.
+  - The appCodeName property returns the application code name of the browser:
+    - Warning
+      - This property is removed (deprecated) in the latest web standard.
+      - Most browsers (IE11, Chrome, Firefox, Safari, Opera) returns Mozilla as appCodeName.
+  - The product property returns the product name of the browser engine:
+    - Warning
+      - This property is removed (deprecated) in the latest web standard.
+      - Most browsers returns Gecko as product.
+    - Warning
+      - The information from the navigator object can often be misleading.
+      - The navigator object should not be used to detect browser versions because:
+      - Different browsers can use the same nameT
+      - he navigator data can be changed by the browser owner
+      - Some browsers misidentify themselves to bypass site tests
+      - Browsers cannot report new operating systems, released later than the browser
+  - The platform property returns the browser platform (operating system):
+  - The language property returns the browser's language:
+  - The onLine property returns true if the browser is online:
+  - The javaEnabled() method returns true if Java is enabled:
+JavaScript Popup Boxes:
+ - JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box:
+   - Alert Box:
+     - An alert box is often used if you want to make sure information comes through to the user.
+      When an alert box pops up, the user will have to click "OK" to proceed.
+   - Confirm Box:
+     - A confirm box is often used if you want the user to verify or accept something.
+      When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.
+      If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+   - Prompt Box:
+     - The window.prompt() method can be written without the window prefix.
+     - A prompt box is often used if you want the user to input a value before entering a page.
+      When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
+      If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
+   - To display line breaks inside a popup box, use a back-slash followed by the character n.
