@@ -51,3 +51,4 @@ function changeSize(){
         myNodeList[i].style.fontSize='24px';
     }
 }
+
