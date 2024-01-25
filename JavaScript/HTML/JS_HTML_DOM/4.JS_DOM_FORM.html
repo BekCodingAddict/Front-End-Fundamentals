@@ -8,25 +8,9 @@
     <link rel="stylesheet" text="text/css" href="/JavaScript/CSS/style.css">
     <link rel="icon" text="x-icon"
         href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
-    <title>JS DOM CSS </title>
-    <script src="/JavaScript/JS/JS_HTML_DOM/JS_DOM_CSS.js"></script>
-    <style>
-        #container{
-            width: 400px;
-            height: 400px;
-            position: relative;
-            background: green;
-            border-radius: 5px;
-        }
+    <title>JavaScript </title>
+    <script src="/JavaScript/JS/JS_HTML_DOM/JS_DOM_Form.js"></script>
 
-        #animate{
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            background-color: white;
-            border-radius: 45px;
-        }
-    </style>
 </head>
 
 <body>
@@ -61,26 +45,27 @@
     </header>
 
     <section>
-        <!-------------------------- Write Code Here... ---------------------->
-        <h1 class="title">Changing HTML Style</h1> <br>
-        <h3 class="title-s">Changing HTML Style</h3><br>
-        <p id="demo1">Hello World!</p><br>
-        <button type="button" onclick="change()">Change Color</button> <br><br>
-        <h3 class="title-s">JavaScript HTML DOM Animation</h3><br>
+        <!-------------------------- Write Code Here... ---------------------->\
+        <h1 class="title">JavaScript Forms</h1><br>
+        <h3 class="title-s">JavaScript Form Validation</h3><br>
+        <form name="myFrom" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+        </form><br>
 
-        <div id="container">
-            <div id="animate"></div>
-        </div><br>
-        <button onclick="Move()">Animate</button><br>
-
+        <h3 class="title-s">JavaScript Can Validate Numeric Input</h3><br>
+        <p>Please input a number between 1 and 10:</p><br>
+        <input id="numb">
+        <button type="button" onclick="myFunction()">Submit</button>
+        <p id="demo1"></p>
         
         <!-------------------------------------------------------------------->
         <br>
         <hr><br>
         <div class="buttons">
-            <a href="../JS_HTML_DOM/JS_DOM_FORM.html"><button type="button">
+            <a href="/JavaScript/HTML/JS_HTML_DOM/3.JS_DOM_Elements(Nodes).html"><button type="button">
                     < Pervious</button></a>
-            <a href="/JavaScript/HTML/JS_HTML_DOM/JS_DOM-EVENTS.html"><button type="button">Next ></button></a>
+            <a href="/JavaScript/HTML/JS_HTML_DOM/5.JS_DOM-EVENTS.html"><button type="button">Next ></button></a>
         </div>
     </section>
     <!----------------------JavaScript---------------------------------------->

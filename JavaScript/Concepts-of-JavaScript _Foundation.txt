@@ -2828,3 +2828,6 @@ JavaScript Popup Boxes:
       When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
       If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
    - To display line breaks inside a popup box, use a back-slash followed by the character n.
+JavaScript Window History:
+ - Window History:
+   - 

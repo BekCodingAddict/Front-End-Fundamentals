@@ -8,8 +8,9 @@
     <link rel="stylesheet" text="text/css" href="/JavaScript/CSS/style.css">
     <link rel="icon" text="x-icon"
         href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
-    <title>JS DOM NAVIGATION </title>
-
+    <title>HTML DOM Document</title>
+    <script src="/JavaScript/JS/JS_HTML_DOM/DOM_Document.js"></script>
+    <script src="/JavaScript/JS/JS_HTML_DOM/JS-DOM-Elements.js"></script>
 </head>
 
 <body>
@@ -45,32 +46,35 @@
 
     <section>
         <!-------------------------- Write Code Here... ---------------------->
-        <h1 class="title">JavaScript HTML DOM Navigation</h1><br>
-        <h3 class="title-s">DOM Nodes</h3>
-        <img src="https://www.w3schools.com/js/pic_htmltree.gif">
-        <h3 class="title-s">Child Nodes and Node Values</h3><br>
-        <h1 id="demo1">Frist Paragraph</h1><br>
-        <p id="demo2"></p><br>
+        <h1 class="title">JavaScript HTML DOM Document</h1><br>
+        <div class="getElement">
+            <h3 id="demo1">To change a content click the button!</h3>
+            <button onclick="change()"  type="button">Click me</button>
+        </div> <br>
 
-        <h3 class="title-s">DOM Root Nodes</h3><br>
-        <h2>JavaScript HTMLDOM</h2>
-        <p>Displaying document.body</p>
-        <p id="demo3"></p><br>
+        <h3 class="title-s">Changing the Value of an Attribute</h3><br>
+        <div>
+            <img src="https://cdn.mos.cms.futurecdn.net/euvzqKTQ7evu3nW2hgUVhP.jpg" id="demo2">
+            <button onclick="demo2()" type="button">Change Image</button>
+        </div><br>
+        <h3 class="title-s">Dynamic HTML content</h3><br>
+        <span>Date: <p id="demo3"></p><br></span>
 
-        <h3 class="title-s">The nodeName Property</h3><br>
-        <h1 id="demo4">Frist Page</h1><br>
-        <p id="demo5"></p><br>
+
+
+        <h1 class="title-s">Finding HTML Objects</h1><br>
+        <img src="/JavaScript/Sources/FindingHTMLObjects.png" width="100%">
         <!-------------------------------------------------------------------->
         <br>
         <hr><br>
         <div class="buttons">
-            <a href="../HTML/6.JS-Commend.html"><button type="button">
+            <a href="/JavaScript/HTML/17.JS-Reserved-Words.html"><button type="button">
                     < Pervious</button></a>
-            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
+            <a href="/JavaScript/HTML/JS_HTML_DOM/JS_DOM_CSS.html"><button type="button">Next ></button></a>
         </div>
     </section>
     <!----------------------JavaScript---------------------------------------->
-    <script src="/JavaScript/JS/JS_HTML_DOM/JS-DOM-navigation.js"></script
+
     <script src="../JS/App.js"></script>
 </body>
 

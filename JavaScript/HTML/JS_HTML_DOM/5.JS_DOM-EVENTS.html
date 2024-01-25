@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" text="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" text="text/css" href="/JavaScript/CSS/style.css">
     <link rel="icon" text="x-icon"
         href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
-    <title>JavaScript </title>
-    <script type="module" src="/JavaScript/JS/JS_HTML_DOM/JS-DOM-EventListener.js"></script>
+    <title>JavaScript DOM EVENTS </title>
+    <script src="/JavaScript/JS/JS_HTML_DOM/JS_DOM_EVENTS.js"></script>
 
 </head>
 
@@ -46,21 +46,32 @@
 
     <section>
         <!-------------------------- Write Code Here... ---------------------->
-        <h1 class="title">JavaScript HTML DOM EventListener</h1><br>
-        <h3 class="title-s">The addEventListener() method</h3><br>
-
+        <h1 class="title">JavaScript HTML DOM Events</h1><br>
+        <h3 class="title-s">Reacting to Events</h3><br>
+        <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1><br>
+        <h1 onclick="changeText(this)">Click on this text!</h1><br>
+        <button onclick="showDate()">Show Date</button>
+        <p>Date: <span id='demo1'></span></p><br>
+        <h3 class="title-s">The onload and onunload Events</h3><br>
+        <p id="demo3"> </p><br>
+        <h3 class="title-s">The onchange Event</h3><br><br>
+        Enter your Name: <input type="text " id="frname" onchange="upperCase()"><br><br>
+        <h3 class="title-s">The onmouseover and onmouseout Events</h3><br>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: aqua; border: 1px solid gray; border-radius: 10px; width: 180px; height: 15px; padding: 15px;"></div><br>
+        <div onmouseover="mDown(this)" onmouseout="mUp(this)" style="background-color: aqua; border: 1px solid gray; border-radius: 10px; width: 180px; height: 15px; padding: 15px;"></div><br>
+        Enter something: <input type="text" onfocus="myFunc(this)">
         <!-------------------------------------------------------------------->
         <br>
         <hr><br>
         <div class="buttons">
-            <a href="/JavaScript/HTML/JS_HTML_DOM/JS_DOM-EVENTS.html"><button type="button">
+            <a href="/JavaScript/HTML/JS_HTML_DOM/4.JS_DOM_FORM.html"><button type="button">
                     < Pervious</button></a>
-            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
+            <a href="/JavaScript/HTML/JS_HTML_DOM/6.JS-DOM-EventListener.html"><button type="button">Next ></button></a>
         </div>
     </section>
     <!----------------------JavaScript---------------------------------------->
 
-    <script type="module" src="../JS/App.js"></script>
+    <script src="../JS/App.js"></script>
 </body>
 
 </html>
