@@ -2830,4 +2830,79 @@ JavaScript Popup Boxes:
    - To display line breaks inside a popup box, use a back-slash followed by the character n.
 JavaScript Window History:
  - Window History:
-   - 
+   - The window.history object contains the browsers history.
+   - The window.history object can be written without the window prefix.
+   - To protect the privacy of the users, there are limitations to how JavaScript can access this object.
+    - Some methods:
+      - history.back() - same as clicking back in the browser
+      - history.forward() - same as clicking forward in the browser
+  - The history.back() method loads the previous URL in the history list.
+
+JavaScript Timing Events:
+ - JavaScript can be executed in time-intervals.This is called timing events.
+ - Timing Events:
+   - The window object allows execution of code at specified time intervals.
+    These time intervals are called timing events.
+    The two key methods to use with JavaScript are:
+    setTimeout(function, milliseconds)
+    Executes a function, after waiting a specified number of milliseconds.
+    setInterval(function, milliseconds)
+    Same as setTimeout(), but repeats the execution of the function continuously.
+  - The setTimeout() and setInterval() are both methods of the HTML DOM Window object.
+  - The setTimeout() Method:
+    - window.setTimeout(function, milliseconds);
+    The window.setTimeout() method can be written without the window prefix.
+    The first parameter is a function to be executed.
+    The second parameter indicates the number of milliseconds before execution.
+  - How to Stop the Execution? :
+    - window.clearTimeout(timeoutVariable)
+    - The window.clearTimeout() method can be written without the window prefix.
+    - The clearTimeout() method uses the variable returned from setTimeout():
+    - myVar = setTimeout(function, milliseconds);
+    - clearTimeout(myVar);
+  - The setInterval() Method:
+    - The setInterval() method repeats a given function at every given time-interval.
+      window.setInterval(function, milliseconds);
+      The window.setInterval() method can be written without the window prefix.
+      The first parameter is the function to be executed. 
+      The second parameter indicates the length of the time-interval between each execution.
+      This example executes a function called "myTimer" once every second (like a digital watch).
+    - There are 1000 milliseconds in one second.
+
+JavaScript Cookies:
+ -  What are Cookies?: 
+   - Cookies are data, stored in small text files, on your computer.
+   When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+   Cookies were invented to solve the problem "how to remember information about the user":
+   When a user visits a web page, his/her name can be stored in a cookie.
+   Next time the user visits the page, the cookie "remembers" his/her name.
+   Cookies are saved in name-value pairs like:
+   username = John Doe
+   When a browser requests a web page from a server, cookies belonging to the page are added to the request. This way the server gets the necessary data to "remember" information about users.
+  - None of the examples below will work if your browser has local cookies support turned off.
+ - Create a Cookie with JavaScript:
+   - JavaScript can create, read, and delete cookies with the document.cookie property.
+     With JavaScript, a cookie can be created like this:
+     document.cookie = "username=John Doe";
+    - You can also add an expiry date (in UTC time). By default, the cookie is deleted when the browser is closed:
+      document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+    - With a path parameter, you can tell the browser what path the cookie belongs to. By default, the cookie belongs to the current page
+      document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+ - Read a Cookie with JavaScript:
+   - let x = document.cookie;
+     document.cookie will return all cookies in one string much like: cookie1=value; cookie2=value; cookie3=value;
+ - Change a Cookie with JavaScript:
+   - With JavaScript, you can change a cookie the same way as you create it:
+   - document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+ - Delete a Cookie with JavaScript:
+   - Deleting a cookie is very simple.
+     You don't have to specify a cookie value when you delete a cookie.
+     Just set the expires parameter to a past date:
+     document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+ - The Cookie String:
+    - The document.cookie property looks like a normal text string. But it is not.
+      Even if you write a whole cookie string to document.cookie, when you read it out again, you can only see the name-value pair of it.
+      If you set a new cookie, older cookies are not overwritten. The new cookie is added to document.cookie, so if you read document.cookie again you will get something like:
+      cookie1 = value; cookie2 = value;
+      Display All Cookies  Create Cookie 1  Create Cookie 2 Delete Cookie 1  Delete Cookie 2
+      If you want to find the value of one specified cookie, you must write a JavaScript function that searches for the cookie value in the cookie string.
