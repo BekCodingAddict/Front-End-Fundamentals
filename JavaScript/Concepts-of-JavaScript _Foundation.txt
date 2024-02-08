@@ -2989,3 +2989,29 @@ Storage Object Properties and Methods:
 Related Pages for Web Storage API:
   - window.localStorage	Allows to save key/value pairs in a web browser. Stores the data with no expiration date
   - window.sessionStorage	Allows to save key/value pairs in a web browser. Stores the data for one 
+
+Web Workers API:
+  - A web worker is a JavaScript running in the background, without affecting the performance of the page.
+  - What is a Web Worker?:
+    - When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+    - A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.
+
+Web Workers and the DOM:
+  - Since web workers are in external files, they do not have access to the following JavaScript objects:
+    - The window object
+    - The document object
+    - The parent object
+
+JavaScript Fetch API:
+  - The Fetch API interface allows web browser to make HTTP requests to web servers.
+  - 😀 No need for XMLHttpRequest anymore.
+
+Web Geolocation API:
+  - Locate the User's Position
+  - The HTML Geolocation API is used to get the geographical position of a user.
+  - Since this can compromise privacy, the position is not available unless the user approves it.
+  - Geolocation is most accurate for devices with GPS, like smartphones.
+  - The Geolocation API will only work on secure contexts such as HTTPS.
+  - If your site is hosted on a non-secure origin (such as HTTP) the requests to get the users location will no longer function.
+  - Using the Geolocation API:
+    - The getCurrentPosition() method is used to return the user's position.

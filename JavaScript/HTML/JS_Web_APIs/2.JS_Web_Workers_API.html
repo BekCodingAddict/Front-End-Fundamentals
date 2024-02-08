@@ -45,48 +45,40 @@
 
     <section>
         <!-------------------------- Write Code Here... ---------------------->
-        <h1 class="title">Intorduction APIs</h1><br>
-        <h3 class="title-s">Browser APIs</h3> <br>
-        <h3>JavaScript Geolocation</h3><br>
-        <p>Click thr button to get your Geolocation</p>
-        <button onclick="getLocation()">Try It</button> <br> <br>
-        <p id="p1"></p><br>
+        <h1 class="title">Web Workers API</h1> <br>
+        <h3 class="title-s">Web Workers Example</h3><br>
 
-        <h2>JavaScript Validation</h2>
-        <p>Enter a number and click OK:</p>
-        <input id="id1" type="number" min="100" max="300" required>
-        <button onclick="myFunction()">OK</button> <br>
-        <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+        <h2>JavaScript Web Workers API</h2>
+        <p>Count numbers: <output id="result"></output></p> <br>
+        <button onclick="startWorker()">startWorker</button>
+        <button onclick="stopWorker()">stopWorker</button> <br>
+
+        <h3 class="title-s">JavaScript Fetch API</h3> <br>
+        <p>A Fetch API Example</p> <br>
+        <p id="p1"></p> <br>
+
+        <h4>Example 2 Async</h4>
         <p id="p2"></p> <br>
-
-        <h2>JavaScript Validation</h2>
-        <p>Enter a number and click OK:</p>
-        <input id="id2" type="number" max="100">
-        <button onclick="myFunction2()">OK</button> <br>
-        <p>If the number is greater than 100 (the input's max attribute), an error message will be displayed.</p>
-        <p id="p3"></p> <br>
-
-        <h4>The History back() Method</h4><br>
-        <button onclick="hisBack()">Back</button><br><br>
-
-        <h4>The History go() Method</h4><br>
-        <button onclick="Go()">Go</button><br><br>
-
-        <h3 class="title-s">Web Storage API</h3> <br>
-        <p id="p4"></p> <br>
+        <h3 class="title-s">Web Geolocation API</h3><br>
+        <h2>JavaScript Geolocation API</h2>
+        <p>Click the button to get your coordinates.</p>
+        <button onclick="getLocation()">Try It</button> <br>
+        
+        <p id="demo"></p>
+        
         <!-------------------------------------------------------------------->
         <br>
         <hr><br>
         <div class="buttons">
-            <a href="/JavaScript/HTML/JS_Browser_BOM/3.JS_Window_History.html"><button type="button">
+            <a href="/JavaScript/HTML/JS_Web_APIs/1.Introduction_APIs.html"><button type="button">
                     < Pervious</button></a>
-            <a href="/JavaScript/HTML/JS_Web_APIs/2.JS_Web_Workers_API.html"><button type="button">Next ></button></a>
+            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
         </div>
     </section>
     <!----------------------JavaScript---------------------------------------->
 
+    <script src="/JavaScript/JS/JS_Web_APIs/2.JS_Web_Workers_API.js"></script>
     <script src="/JavaScript/JS/App.js"></script>
-    <script src="/JavaScript/JS/JS_Web_APIs/1.Introduction_Web_APIs.js"></script>
 </body>
 
 </html>
