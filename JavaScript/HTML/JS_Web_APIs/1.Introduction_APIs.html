@@ -45,36 +45,48 @@
 
     <section>
         <!-------------------------- Write Code Here... ---------------------->
-        <h1 class="title">JavaScript Window History</h1> <br>
-        <h3 class="title-s">Window History</h3> <br>
-        <h4>Window History Back</h4> <br>
-        <button onclick="goBack()">Go Back</button> <br><br>
-        <h4>Window History Forward</h4> <br>
-        <button onclick="goFoward()">Go Forward</button> <br><br>
+        <h1 class="title">Intorduction APIs</h1><br>
+        <h3 class="title-s">Browser APIs</h3> <br>
+        <h3>JavaScript Geolocation</h3><br>
+        <p>Click thr button to get your Geolocation</p>
+        <button onclick="getLocation()">Try It</button> <br> <br>
+        <p id="p1"></p><br>
 
-        <h3 class="title-s">JavaScript Timing Events</h3> <br>
-        <button onclick="setTimeout(myFunc,2000)">Try It</button> <br><br>
+        <h2>JavaScript Validation</h2>
+        <p>Enter a number and click OK:</p>
+        <input id="id1" type="number" min="100" max="300" required>
+        <button onclick="myFunction()">OK</button> <br>
+        <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+        <p id="p2"></p> <br>
 
-        <h4> Set time interval</h4> <br>
-        <button onclick="setInterval(myTimer,1000)">Start</button> <br><br>
-        <button onclick='clearInterval(stopping)'>Stop</button> <br><br>
-        <p id="p1"></p> <br>
-        
-        <h3 class="title-s">What are Cookies?</h3> <br>
-        
+        <h2>JavaScript Validation</h2>
+        <p>Enter a number and click OK:</p>
+        <input id="id2" type="number" max="100">
+        <button onclick="myFunction2()">OK</button> <br>
+        <p>If the number is greater than 100 (the input's max attribute), an error message will be displayed.</p>
+        <p id="p3"></p> <br>
+
+        <h4>The History back() Method</h4><br>
+        <button onclick="hisBack()">Back</button><br><br>
+
+        <h4>The History go() Method</h4><br>
+        <button onclick="Go()">Go</button><br><br>
+
+        <h3 class="title-s">Web Storage API</h3> <br>
+        <p id="p4"></p> <br>
         <!-------------------------------------------------------------------->
         <br>
         <hr><br>
         <div class="buttons">
-            <a href="/JavaScript/HTML/JS_Browser_BOM/2.JS_Window.html"><button type="button">
+            <a href="/JavaScript/HTML/JS_Browser_BOM/3.JS_Window_History.html"><button type="button">
                     < Pervious</button></a>
-            <a href="/JavaScript/HTML/JS_Web_APIs/1.Introduction_APIs.html"><button type="button">Next ></button></a>
+            <a href="../HTML/1.Introduction.html"><button type="button">Next ></button></a>
         </div>
     </section>
     <!----------------------JavaScript---------------------------------------->
 
     <script src="/JavaScript/JS/App.js"></script>
-    <script src="/JavaScript/JS/JS_Browser_BOM/JS_Window_History.js"></script>
+    <script src="/JavaScript/JS/JS_Web_APIs/1.Introduction_Web_APIs.js"></script>
 </body>
 
 </html>

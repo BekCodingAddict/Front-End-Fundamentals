@@ -2906,3 +2906,86 @@ JavaScript Cookies:
       cookie1 = value; cookie2 = value;
       Display All Cookies  Create Cookie 1  Create Cookie 2 Delete Cookie 1  Delete Cookie 2
       If you want to find the value of one specified cookie, you must write a JavaScript function that searches for the cookie value in the cookie string.
+
+------------------------------Web APIs - Introduction-------------------------------------------------
+A Web API is a developer's dream.
+It can extend the functionality of the browser
+It can greatly simplify complex functions
+It can provide easy syntax to complex code
+What is Web API?:
+  - API stands for Application Programming Interface.
+  - A Web API is an application programming interface for the Web.
+  - A Browser API can extend the functionality of a web browser.
+  - A Server API can extend the functionality of a web server.
+
+Browser APIs:
+  - All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.
+  - For example, the Geolocation API can return the coordinates of where the browser is located.
+
+Third Party APIs:
+  - Third Party APIs
+Third party APIs are not built into your browser.
+- To use these APIs, you will have to download the code from the Web
+   - Examples:
+   - YouTube API - Allows you to display videos on a web site.
+   - Twitter API - Allows you to display Tweets on a web site.
+   - Facebook API - Allows you to display Facebook info on a web site.
+JavaScript Validation API:
+  - Constraint Validation DOM Methods: 
+    - checkValidity()	Returns true if an input element contains valid data.
+    - setCustomValidity()	Sets the validationMessage property of an input element.
+Constraint Validation DOM Properties:
+  - validity	Contains boolean properties related to the validity of an input element.
+  - validationMessage	Contains the message a browser will display when the validity is false.
+  - willValidate	Indicates if an input element will be validated.
+Validity Properties:
+  - customError	Set to true, if a custom validity message is set.
+  - patternMismatch	Set to true, if an element's value does not match its pattern attribute.
+  - rangeOverflow	Set to true, if an element's value is greater than its max attribute.
+  - rangeUnderflow	Set to true, if an element's value is less than its min attribute.
+  - stepMismatch	Set to true, if an element's value is invalid per its step attribute.
+  - tooLong	Set to true, if an element's value exceeds its maxLength attribute.
+  - typeMismatch	Set to true, if an element's value is invalid per its type attribute.
+  - valueMissing	Set to true, if an element (with a required attribute) has no value.
+  - valid	Set to true, if an element's value is valid.
+
+Web History API:
+  - The Web History API provides easy methods to access the windows.history object.
+  - The window.history object contains the URLs (Web Sites) visited by the user.
+
+The History back() Method:
+  - The back() method loads the previous URL in the windows.history list.
+  - It is the same as clicking the "back arrow" in your browser.
+  - The go() method loads a specific URL from the history list:
+History Object Properties:
+  - length	Returns the number of URLs in the history list
+  - back()	Loads the previous URL in the history list
+  - forward()	Loads the next URL in the history list
+  - go()	Loads a specific URL from the history list
+Web Storage API:
+  - The Web Storage API is a simple syntax for storing and retrieving data in the browser. It is very easy to use:
+The localStorage Object:
+  - The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.
+  - The data is stored with no expiration date, and will not be deleted when the browser is closed.
+  - The data will be available for days, weeks, and years.
+The setItem() Method:
+  - The localStorage.setItem() method stores a data item in a storage.
+  - It takes a name and a value as parameters:
+The getItem() Method:
+  - The localStorage.getItem() method retrieves a data item from the storage.
+  - It takes a name as parameter:
+
+The sessionStorage Object:
+  - The sessionStorage object is identical to the localStorage object.
+  - The difference is that the sessionStorage object stores data for one session.
+  - The data is deleted when the browser is closed.
+Storage Object Properties and Methods:
+  - key(n)	Returns the name of the nth key in the storage
+  - length	Returns the number of data items stored in the Storage object
+  - getItem(keyname)	Returns the value of the specified key name
+  - setItem(keyname, value)	Adds a key to the storage, or updates a key value (if it already exists)
+  - removeItem(keyname)	Removes that key from the storage
+  - clear()	Empty all key out of the storage
+Related Pages for Web Storage API:
+  - window.localStorage	Allows to save key/value pairs in a web browser. Stores the data with no expiration date
+  - window.sessionStorage	Allows to save key/value pairs in a web browser. Stores the data for one 

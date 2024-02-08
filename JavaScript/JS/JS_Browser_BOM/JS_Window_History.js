@@ -15,12 +15,12 @@ function check(){
 
 setTimeout(check,3000);
 
-// const myTimer=()=>{
-//     const d=new Date();
-//     document.getElementById('p1').innerHTML=d.toLocaleTimeString();
-// }
+const myTimer=()=>{
+    const d=new Date();
+    document.getElementById('p1').innerHTML=d.toLocaleTimeString();
+}
 
-// const stopping=setInterval(myTimer,1000);
+const stopping=setInterval(myTimer,1000);
 
 //
 function setCookie(cname,cvalue,exdays){
