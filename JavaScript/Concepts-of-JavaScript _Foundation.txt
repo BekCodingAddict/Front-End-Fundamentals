@@ -3135,3 +3135,96 @@ GET or POST:
  - Sending user input (which can contain unknown characters), POST is more robust and secure than GET.
  - Synchronous XMLHttpRequest (async = false) is not recommended because the JavaScript will stop executing until the server response is ready. If the server is busy or slow, the application will hang or stop.
  - Modern developer tools are encouraged to warn about using synchronous requests and may throw an InvalidAccessError exception when it occurs.
+
+----------------------- JavaScript JSON---------------------------------------------------
+JSON stands for JavaScript Object Notation
+JSON is a text format for storing and transporting data
+JSON is "self-describing" and easy to understand
+What is JSON?:
+  - JSON stands for JavaScript Object Notation
+  - JSON is a lightweight data-interchange format
+  - JSON is plain text written in JavaScript object notation
+  - JSON is used to send data between computers
+  - JSON is language independent *
+The JSON syntax is derived from JavaScript object notation, but the JSON format is text only.
+Code for reading and generating JSON exists in many programming languages.
+Why Use JSON?:
+  - The JSON format is syntactically similar to the code for creating JavaScript objects. Because of this, a JavaScript program can easily convert JSON data into JavaScript objects.
+  - Since the format is text only, JSON data can easily be sent between computers, and used by any programming language.
+  - JavaScript has a built in function for converting JSON strings into JavaScript objects:
+  - JSON.parse()
+  - JavaScript also has a built in function for converting an object into a JSON string: 
+  - JSON.stringify()
+  - You can receive pure text from a server and use it as a JavaScript object. 
+  - You can send a JavaScript object to a server in pure text format. 
+  - You can work with data as JavaScript objects, with no complicated parsing and translations.
+Storing Data:
+  - When storing data, the data has to be a certain format, and regardless of where you choose to store it, text is always one of the legal formats.
+  - JSON makes it possible to store JavaScript objects as text.
+JSON Values:
+  - a string
+  - a number
+  - an object
+  - an array
+  - a boolean
+  - null
+  - In JavaScript values can be all of the above, plus any other valid JavaScript expression, including:
+    - a function
+    - a date
+    - undefined
+JSON is Unlike XML Because:
+  - JSON doesn't use end tag
+  - JSON is shorter
+  - JSON is quicker to read and write
+  - JSON can use arrays
+  - The biggest difference is:
+    -  XML has to be parsed with an XML parser. JSON can be parsed by a standard JavaScript function.
+Why JSON is Better Than XML:
+  - XML is much more difficult to parse than JSON.
+  - JSON is parsed into a ready-to-use JavaScript object.
+For AJAX applications, JSON is faster and easier than XML:
+  - Using XML
+  - Fetch an XML document
+  - Use the XML DOM to loop through the document
+  - Extract values and store in variables
+Using JSON
+  - Fetch a JSON string
+  - JSON.Parse the JSON string
+Convert a string into a date, using the reviver function:
+
+const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.parse(text, function (key, value) {
+  if (key == "birth") {
+    return new Date(value);
+  } else {
+    return value;
+  }
+});
+
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth;
+Parsing Functions:
+Functions are not allowed in JSON.
+If you need to include a function, write it as a string.
+You can convert it back into a function later:
+
+You should avoid using functions in JSON, the functions will lose their scope,
+ and you would have to use eval() to convert them back into functions.
+
+In JSON, date objects are not allowed. The JSON.stringify() function will convert any dates into strings.
+Example:
+  - const obj = {name: "John", today: new Date(), city : "New York"};
+  - const myJSON = JSON.stringify(obj);
+In JSON, functions are not allowed as object values.
+  - The JSON.stringify() function will remove any functions from a JavaScript object, both the key and the value:
+This can be omitted if you convert your functions into strings before running the JSON.stringify() function.
+Example:
+  - const obj = {name: "John", age: function () {return 30;}, city: "New York"};
+  - obj.age = obj.age.toString();
+  - const myJSON = JSON.stringify(obj);
+If you send functions using JSON, the functions will lose their scope, and the receiver would have to use eval() 
+to convert them back into functions.
+
+JSONP:
+  - JSONP is a method for sending JSON data without worrying about cross-domain issues.
+  - JSONP does not use the XMLHttpRequest object.
+  - JSONP uses the <script> tag instead.
