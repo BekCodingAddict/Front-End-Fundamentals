@@ -9,7 +9,24 @@
     <link rel="icon" text="x-icon"
         href="https://th.bing.com/th/id/R.a6c2c5cd395f5ecbb0c035438abbce5a?rik=gMLEVYlzGt%2fp1w&riu=http%3a%2f%2fweb.eecs.umich.edu%2f~dkoutra%2fcode-icon.png&ehk=Y29bdL93eS3uuTNuB1fydGF2ERg23MO3pKRUKp7vgpU%3d&risl=&pid=ImgRaw&r=0">
     <title>JavaScript </title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,9 +63,27 @@
     <section>
         <!-------------------------- Write Code Here... ---------------------->
         <h1 class="title">JavaScript AJAX Introduction</h1> <br>
-        
+        <div id="demo">
+            <h2>The XMLHttpRequest Object</h2>
+            <button type="button" onclick="loadDoc()">Change Content</button>
+        </div><br>
+        <h3 class="title-s">AJAX - The XMLHttpRequest Object</h3><br>
+        <div id="demo2">
+            <h2>The XMLHttpRequest Object</h2>
+            <button type="button" onclick="loadDoc2()">Change Content</button>
+        </div><br>
+        <h3 class="title-s">AJAX XML Example</h3> <br>
+        <button type="button" onclick="loadDocument()">Get my CD collection</button>
+        <br><br>
+        <table id="demo3"></table>
+        <h4>Display array as the HTML Table</h4> <br>
+        <button onclick="showCase()">Show Table</button> <br> <br>
+        <table id="table">
+        </table> <br><br>
 
-        
+        <h3 class="title-s">AJAX Database Example</h3> <br>
+
+
         <!-------------------------------------------------------------------->
         <br>
         <hr><br>
@@ -61,6 +96,7 @@
     <!----------------------JavaScript---------------------------------------->
 
     <script src="/JavaScript/JS/App.js"></script>
+    <script src="/JavaScript/JS/JS_AJAX/1.JS_AJAX_Introduction.js"></script>
 </body>
 
 </html>

@@ -3015,3 +3015,123 @@ Web Geolocation API:
   - If your site is hosted on a non-secure origin (such as HTTP) the requests to get the users location will no longer function.
   - Using the Geolocation API:
     - The getCurrentPosition() method is used to return the user's position.
+
+---------------------------- AJAX Introduction---------------------------------------
+AJAX is a developer's dream, because you can:
+  - Read data from a web server - after the page has loaded
+  - Update a web page without reloading the page
+  - Send data to a web server - in the background
+What is AJAX?:
+  -  = Asynchronous JavaScript And XML.
+  - AJAX is not a programming language.
+  - AJAX just uses a combination of:
+    - A browser built-in XMLHttpRequest object (to request data from a web server)
+    - JavaScript and HTML DOM (to display or use the data)
+  - AJAX is a misleading name. AJAX applications might use XML to transport data, 
+    but it is equally common to transport data as plain text or JSON text.
+  - AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+Modern Browsers (Fetch API):
+  - Modern Browsers can use Fetch API instead of the XMLHttpRequest Object.
+  - The Fetch API interface allows web browser to make HTTP requests to web servers.
+  - If you use the XMLHttpRequest Object, Fetch can do the same in a simpler way.
+
+AJAX - The XMLHttpRequest Object:
+  - The keystone of AJAX is the XMLHttpRequest object.
+    - Create an XMLHttpRequest object
+    - Define a callback function
+    - Open the XMLHttpRequest object
+    - Send a Request to a server
+  - Create an XMLHttpRequest Object:
+    - variable = new XMLHttpRequest();
+  - Define a Callback Function:
+    - A callback function is a function passed as a parameter to another function.
+    - In this case, the callback function should contain the code to execute when the response is ready.
+      xhttp.onload = function() {
+        // What to do when the response is ready
+      }
+  - Send a Request:
+    - To send a request to a server, you can use the open() and send() methods of the XMLHttpRequest object:
+      - xhttp.open("GET", "ajax_info.txt");
+      - xhttp.send();
+  - Access Across Domains:
+    - new XMLHttpRequest()	Creates a new XMLHttpRequest object
+    - abort()	Cancels the current request
+    - getAllResponseHeaders()	Returns header information
+    - getResponseHeader()	Returns specific header information
+    - open(method, url, async, user, psw)	Specifies the request
+
+    - method: the request type GET or POST
+    - url: the file location
+    - async: true (asynchronous) or false (synchronous)
+    - user: optional user name
+    - psw: optional password
+    - send()	Sends the request to the server
+    - Used for GET requests
+    - send(string)	Sends the request to the server.
+    - Used for POST requests
+    - setRequestHeader()	Adds a label/value pair to the header to be sent.
+
+    - onload	Defines a function to be called when the request is received (loaded)
+    - onreadystatechange	Defines a function to be called when the readyState property changes
+    - readyState	Holds the status of the XMLHttpRequest.
+    - 0: request not initialized\
+    - 1: server connection established
+    - 2: request received
+    - 3: processing request
+    - 4: request finished and response is ready
+    - responseText	Returns the response data as a string
+    - responseXML	Returns the response data as XML data
+    - status	Returns the status-number of a request
+      200: "OK"
+      403: "Forbidden"
+      404: "Not Found"
+      For a complete list go to the Http Messages Reference
+    - statusText	Returns the status-text (e.g. "OK" or "Not Found")
+  - The onload Property:
+    - With the XMLHttpRequest object you can define a callback function to be executed when the request receives an answer.
+  - Multiple Callback Functions:
+    - If you have more than one AJAX task in a website, you should create one function for executing the XMLHttpRequest object, and one callback function for each AJAX task.
+    - The function call should contain the URL and what function to call when the response is ready.
+Example
+loadDoc("url-1", myFunction1);
+
+loadDoc("url-2", myFunction2);
+
+function loadDoc(url, cFunction) {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {cFunction(this);}
+  xhttp.open("GET", url);
+  xhttp.send();
+}
+
+function myFunction1(xhttp) {
+  // action goes here
+}
+function myFunction2(xhttp) {
+  // action goes here
+}
+
+AJAX - XMLHttpRequest:
+  - The XMLHttpRequest object is used to request data from a server.
+  - The url - A File On a Server:
+    - xhttp.open("GET", "ajax_test.asp", true);
+    - The file can be any kind of file, like .txt and .xml, or server scripting files like .asp and .php (which can perform actions on the server before sending the response back).
+  - Asynchronous - True or False? :
+    - Server requests should be sent asynchronously.
+    - The async parameter of the open() method should be set to true:
+    - By sending asynchronously, the JavaScript does not have to wait for the server response, but can instead:
+      execute other scripts while waiting for server response
+      deal with the response after the response is ready
+    - The default value for the async parameter is async = true.
+    - You can safely remove the third parameter from your code.
+    - Synchronous XMLHttpRequest (async = false) is not recommended because the JavaScript will stop executing until the server response is ready. 
+    - If the server is busy or slow, the application will hang or stop.
+
+GET or POST:
+ - GET is simpler and faster than POST, and can be used in most cases.
+ - However, always use POST requests when:
+ - A cached file is not an option (update a file or database on the server).
+ - Sending a large amount of data to the server (POST has no size limitations). 
+ - Sending user input (which can contain unknown characters), POST is more robust and secure than GET.
+ - Synchronous XMLHttpRequest (async = false) is not recommended because the JavaScript will stop executing until the server response is ready. If the server is busy or slow, the application will hang or stop.
+ - Modern developer tools are encouraged to warn about using synchronous requests and may throw an InvalidAccessError exception when it occurs.
