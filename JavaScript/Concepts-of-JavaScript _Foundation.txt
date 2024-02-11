@@ -3228,3 +3228,56 @@ JSONP:
   - JSONP is a method for sending JSON data without worrying about cross-domain issues.
   - JSONP does not use the XMLHttpRequest object.
   - JSONP uses the <script> tag instead.
+
+---------------------JavaScript jQuery--------------------------------------------------
+jQuery vs JavaScript:
+  - jQuery was created in 2006 by John Resig. It was designed to handle Browser Incompatibilities and to simplify HTML DOM Manipulation, Event Handling, Animations, and Ajax.
+  - For more than 10 years, jQuery has been the most popular JavaScript library in the world.
+  - However, after JavaScript Version 5 (2009), most of the jQuery utilities can be solved with a few lines of standard JavaScript:
+
+---------------------------------- JavaScript Graphics-------------------------------------
+Graphic Libraries
+JavaScript libraries to use for all kinds of graphs:
+  - Plotly.js
+  - Chart.js
+  - Google Chart
+Plotly.js:
+  - Plotly.js is a charting library that comes with over 40 chart types, 3D charts, statistical graphs, and SVG maps.
+Chart.js
+Chart.js comes with many built-in chart types:
+  - Scatter
+  - Line
+  - Bar
+  - Radar
+  - Pie and Doughnut
+  - Polar Area
+  - Bubble
+Google Chart
+From simple line charts to complex tree maps, Google Chart provides a number of built-in chart types:
+  - Scatter Chart
+  - Line Chart
+  - Bar / Column Chart
+  - Area Chart
+  - Pie Chart
+  - Donut Chart
+  - Org Chart
+  - Map / Geo Chart
+HTML Canvas:
+  - HTML Canvas is perfect for Scatter Plots
+  - HTML Canvas is perfect for Line Graphs
+  - HTML Canvas is perfect for combining Scatter and Lines
+
+Polity.js:
+Plotly.js is a charting library that comes with over 40 chart types:
+
+Horizontal and Vertical Bar Charts
+Pie and Donut Charts
+Line Charts
+Scatter and Bubble Plots
+Equation Plots
+3D Charts
+Statistical Graphs
+SVG Maps
+...
+Plotly.js is free and open-source under the MIT license. It costs nothing to install and use. You can view the source, r
+eport issues and contribute using Github. 
