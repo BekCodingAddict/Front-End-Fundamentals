@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+section,
+footer {
+  display: grid;
+  place-content: center;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: green;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+  padding: 20px;
+}
+
+section {
+  flex-grow: 1;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+header nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+li:hover {
+  background-color: black;
+  color: wheat;
+  cursor: pointer;
+}
