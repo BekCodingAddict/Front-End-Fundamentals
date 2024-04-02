@@ -1,0 +1,57 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.outer-grid {
+  display: grid;
+  grid-template-columns: subgrid;
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+.inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5px;
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.item {
+  padding: 10px;
+  border: 1px solid #666;
+  text-align: center;
+}
+
+.item .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 3fr));
+  grid-gap: 10px;
+}
+
+.item .content .profileImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.item .content .prpfileImg img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid gray;
+  top: 25px;
+}
+
+.item .content .profileInfo {
+  display: grid;
+  grid-template-columns: subgrid;
+  padding: 1rem;
+}
