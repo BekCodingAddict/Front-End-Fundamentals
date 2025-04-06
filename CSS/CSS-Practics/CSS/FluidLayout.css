@@ -30,58 +30,63 @@ body {
 }
 
 .input-field {
-  flex: 1 0 10rem;
-  border: 1px solid rgb(193, 193, 193);
-  padding: 0.3rem;
+  flex: 1 1 10rem;
+  border: 1px solid#0276ff;
+  padding: 0.5rem;
   border-radius: 0.2rem;
   margin: 0.3rem;
 }
 
 .input-field:hover,
 .input-field:focus {
-  outline: 0.1rem solid rgb(193, 193, 193);
+  box-shadow: 0 0 0 1px solid #0276ff;
+  outline: 0.01rem solid #0276ff;
 }
 
 button {
-  flex: 1 0 5rem;
+  flex: 1 1 4rem;
   padding: 0.3rem 1.4rem 0.3rem 1.4rem;
   margin: 0.3rem;
   border-radius: 0.2rem;
-  border: 1px solid rgb(193, 193, 193);
+  border: 1px solid#0276ff;
 }
 
 /* CSS */
-.button-91 {
+.button-22 {
+  align-items: center;
+  appearance: button;
+  background-color: #0276ff;
+  border-radius: 0.3rem;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
   color: #fff;
-  padding: 15px 25px;
-  background-color: #38d2d2;
-  background-image: radial-gradient(
-      93% 87% at 87% 89%,
-      rgba(0, 0, 0, 0.23) 0%,
-      transparent 86.18%
-    ),
-    radial-gradient(
-      66% 66% at 26% 20%,
-      rgba(255, 255, 255, 0.55) 0%,
-      rgba(255, 255, 255, 0) 69.79%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
-    inset 0px 3px 9px rgba(255, 255, 255, 0.3),
-    inset 0px 1px 1px rgba(255, 255, 255, 0.6),
-    inset 0px -8px 36px rgba(0, 0, 0, 0.3),
-    inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
-  font-weight: bold;
-  font-size: 16px;
-
-  border: 0;
-
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue", sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0.3rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
 
-  cursor: pointer;
+.button-22:active {
+  background-color: #006ae8;
+}
+
+.button-22:hover {
+  background-color: #1c84ff;
 }
 
 button:focus,
